@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTOSTAR</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="loader-body">
+    <div class="loader-inner">
+      <div class="loader-box"></div>
+    </div>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="header-nav">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/autostar-logo.png" alt="">
+            </a>
+            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-icon"></span>
+              <span class="navbar-icon"></span>
+              <span class="navbar-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button class="navbar-toggler cross-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-times nab-bar-icon" aria-hidden="true"></i>
+              </button>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Our Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="inner-nav-bar">
+                    <div class="inner-nav-bar-inner">
+                      <a href="">pix listing</a>
+                      <a href="">vic listing</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="carsearch.html">Search Your Car</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- starting easy-book-car -->
+  <section>
+    <div class="easy-book-car">
+      <div class="easy-book-car-banner">
+        <div class="container">
+          <div class="row easy-book-car-row">
+            <div class="col-lg-7">
+              <div class="easy-book-car-para">
+                <h1>
+                  Easy Book Your Dream Car Today
+                </h1>
+                <p>Luxury Cars at low-cost, starts $75 / day from over 100 premium locations</p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div class="easy-book-car-form">
+                <form>
+                  <div class="form-inner">
+                    <div class="form-block">
+                      <label>Pickup Location</label>
+                      <div class="select-box form-select-box">
+                        <select name="place" id="place">
+                          <option value="London Airport">London Airport</option>
+                          <option value="Paris Place">Paris Place</option>
+                          <option value="Florence Airport">Florence Airport</option>
+                          <option value="Korea Airport">Korea Airport</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <label>Drop Off Location</label>
+                      <div class="select-box form-select-box">
+                        <select name="returnplace" id="returnplace">
+                          <option value="London Airport">London Airport</option>
+                          <option value="Paris Place">Paris Place</option>
+                          <option value="Florence Airport">Florence Airport</option>
+                          <option value="Korea Airport">Korea Airport</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="location">
+                      <label>Drop Off Date</label>
+                      <div class="time-row">
+                        <div class="time-column">
+                          <input type="date">
+                        </div>
+                        <div class="time-column-two">
+                          <div class="time-column-inner">
+                            <div class="select-box select-two">
+                              <select name="returnplace" id="returnplace">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                              </select>
+                            </div>
+                            <span class="sec-span">:</span>
+                            <div class="select-box select-two">
+                              <select name="returnplace" id="returnplace">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="location">
+                      <label>Pickup Date</label>
+                      <div class="time-row">
+                        <div class="time-column">
+                          <input type="date">
+                        </div>
+                        <div class="time-column-two">
+                          <div class="time-column-inner">
+                            <div class="select-box select-two">
+                              <select name="returnplace" id="returnplace">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                              </select>
+                            </div>
+                            <span class="sec-span">:</span>
+                            <div class="select-box select-two">
+                              <select name="returnplace" id="returnplace">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="easy-book-car-btn">
+                      <a href="search.html">search</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting OUR BENEFITS -->
+  <section class="our-benefits">
+    <div class="container">
+      <div class="our-benefits-block">
+        <div class="gallery-section-content">
+          <h2>OUR BENEFITS</h2>
+          <h5>Luxury Rental Services</h5>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="our-benefits-box">
+            <div class="our-benefits-box-inner">
+              <div class="our-benefits-svg-one">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <g id="rating-2" data-name="rating">
+                    <g>
+                      <path
+                        d="m26.99337 23.8414h.84657a1.42581 1.42581 0 0 0 0-2.85162h-.84657.84651a1.426 1.426 0 0 0 .00006-2.85161h-4.75222a1.18736 1.18736 0 0 1 -1.18729-1.17372l-.05933-5.1616a1.43431 1.43431 0 0 0 -2.868.01649c.06558 3.43023-2.48092 5.761-5.5695 6.98718v9.57966l3.29718 1.15847h10.29259.84651a1.426 1.426 0 0 0 .00006-2.85161 1.42581 1.42581 0 1 0 0-2.85162z"
+                        fill="#ffddce"></path>
+                      <path
+                        d="m26.99316 30.04443h-10.29248a.50164.50164 0 0 1 -.16552-.02832l-3.29688-1.1582a.49936.49936 0 0 1 -.33447-.47168v-9.57959a.50005.50005 0 0 1 .31543-.46484c1.605-.63721 5.32959-2.54688 5.2539-6.5127a1.93416 1.93416 0 0 1 3.86817-.03222l.05908 5.16162a.68976.68976 0 0 0 .6875.67968h4.75195a1.94031 1.94031 0 0 1 1.30176 3.35938 1.9437 1.9437 0 0 1 -.00879 2.84375 1.94382 1.94382 0 0 1 .00781 2.84473 1.93913 1.93913 0 0 1 -1.29246 3.35839zm-10.207-1h11.05368a.92581.92581 0 0 0 -.00484-1.85156c-.43041-.03212-1.33565.18428-1.34182-.5.00885-.6878.91509-.46677 1.34668-.5a.92588.92588 0 0 0 -.00006-1.85156h-.84664a.50009.50009 0 0 1 0-1h.84665a.92588.92588 0 0 0 0-1.85156c-.4348-.03283-1.33685.18719-1.34662-.5.00812-.68665.91535-.46745 1.34668-.5a.92581.92581 0 0 0 -.00779-1.85157h-4.74419a1.69342 1.69342 0 0 1 -1.6875-1.668l-.05908-5.16162a.93431.93431 0 0 0 -1.86816.01079c.06005 3.13277-1.96485 5.79-5.56934 7.32222v8.89014z">
+                      </path>
+                      <path
+                        d="m10.2378 27.47409a3.28263 3.28263 0 0 0 .1632 1.44571h-8.9424v-10.64463h8.9424a3.2819 3.2819 0 0 0 -.16323 1.44571 3.29555 3.29555 0 0 1 .16323-1.44568 1.588 1.588 0 0 1 3.008.68792v9.26881a1.588 1.588 0 0 1 -3.008.6878 3.27335 3.27335 0 0 1 -.1632-1.44564z"
+                        fill="#ee596b"></path>
+                      <path
+                        d="m11.77637 30.30371a1.97224 1.97224 0 0 1 -1.66944-.88379h-8.64843a.49971.49971 0 0 1 -.5-.5v-10.64453a.49971.49971 0 0 1 .5-.5h8.644a2.10662 2.10662 0 0 1 3.8066 1.19588v9.26066a2.07009 2.07009 0 0 1 -2.13273 2.07178zm-.90967-1.56494a1.08631 1.08631 0 0 0 2.0425-.49848v-9.2774a1.08521 1.08521 0 0 0 -2.05175-.48394 3.22191 3.22191 0 0 0 -.11965 1.25542.50026.50026 0 0 1 -1-.02395c.00265-.3065-.01593-.61431.01465-.935h-7.79395v9.64453h7.791c-.02636-.30686-.00992-.62942-.01172-.93506a.50022.50022 0 0 1 1-.02148 3.00571 3.00571 0 0 0 .12892 1.27536z">
+                      </path>
+                      <g fill="#f9da41">
+                        <path
+                          d="m27.386 9.315.975 1.976 2.18.317-1.578 1.538.373 2.171-1.95-1.025-1.951 1.025.373-2.171-1.578-1.538 2.18-.317z">
+                        </path>
+                        <path
+                          d="m20.151 2.182.975 1.976 2.18.317-1.578 1.538.373 2.172-1.95-1.025-1.951 1.025.373-2.172-1.578-1.538 2.18-.317z">
+                        </path>
+                        <path
+                          d="m12.206 9.315.976 1.976 2.18.317-1.578 1.538.373 2.171-1.951-1.025-1.95 1.025.372-2.171-1.577-1.538 2.18-.317z">
+                        </path>
+                      </g>
+                      <path
+                        d="m25.43506 15.81738a.50341.50341 0 0 1 -.49267-.58447l.32812-1.91309-1.38965-1.35449a.49982.49982 0 0 1 .27734-.85254l1.91992-.27929.85938-1.73975a.49972.49972 0 0 1 .89648 0l.85889 1.73975 1.92041.27929a.49982.49982 0 0 1 .27734.85254l-1.39013 1.355.32812 1.9126a.49995.49995 0 0 1 -.72558.52686l-1.71729-.90284a16.78852 16.78852 0 0 1 -1.95068.96043zm-.13086-3.86084.85254.83106c.3247.2398-.02112 1.14921-.05762 1.61572.41864-.17033 1.19038-.79046 1.51951-.55373l1.05325.55373-.20118-1.17332c-.12189-.38534.69139-.91652.9961-1.27344-.48045-.11281-1.424-.06224-1.5542-.4448l-.52686-1.0674c-.25616.42261-.5 1.336-.90378 1.34082z">
+                      </path>
+                      <path
+                        d="m18.2002 8.68506a.50349.50349 0 0 1 -.49267-.58448l.32811-1.91258-1.39013-1.355a.49982.49982 0 0 1 .27734-.85254l1.92041-.2793.85889-1.73974a.52006.52006 0 0 1 .89648 0l.85937 1.73975 1.91992.2793a.49982.49982 0 0 1 .27734.85254l-1.38964 1.35449.32813 1.91309a.49974.49974 0 0 1 -.7251.52685l-1.71826-.90283a16.7057 16.7057 0 0 1 -1.95019.96045zm1.95019-2.02539a7.34512 7.34512 0 0 1 1.28661.61133l-.20117-1.17334c-.12189-.38534.69138-.91653.99609-1.27344-.48014-.11279-1.42477-.06231-1.55419-.4448l-.52734-1.06742c-.25511.42092-.49924 1.33571-.9033 1.34083l-1.17775.17138.85254.831c.32469.23981-.02112 1.14921-.05762 1.61573a7.28785 7.28785 0 0 1 1.28613-.61127z">
+                      </path>
+                      <path
+                        d="m10.25586 15.81738a.50341.50341 0 0 1 -.49267-.58447l.32812-1.91309-1.38965-1.35449a.49983.49983 0 0 1 .27734-.85254l1.91993-.27929.85937-1.73975a.49973.49973 0 0 1 .89649 0l.85888 1.73975 1.92041.27929a.49983.49983 0 0 1 .27735.85254l-1.39014 1.355.32812 1.9126a.49995.49995 0 0 1 -.72558.52686l-1.71729-.90284a16.78773 16.78773 0 0 1 -1.95068.96043zm-.13086-3.86084.85254.83106c.3247.2398-.02112 1.14921-.05762 1.61572.41865-.17033 1.19038-.79046 1.51952-.55373l1.05324.55373-.20118-1.17332c-.12189-.38534.69139-.91652.9961-1.27344-.48045-.11281-1.424-.06224-1.5542-.4448l-.52686-1.0674c-.25615.42261-.5 1.336-.90378 1.34082z">
+                      </path>
+                    </g>
+                  </g>
+                  <g id="survey">
+                    <path d="m2.3121 32.1051a.5003.5003 0 0 0 0-1 .5003.5003 0 0 0 0 1z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="our-benefits-svg-two">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
+                  y="0px" width="62.995px" height="62.995px" viewBox="0 0 62.995 62.995"
+                  style="enable-background:new 0 0 62.995 62.995;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path
+                        d="M54.411,24.535c-1.065-1.239-2.934-0.96-4.038,0c-2.959,2.571-5.746,5.317-8.554,8.046   c-2.872-2.587-5.566-5.357-8.352-8.046c-0.556-0.536-1.171-0.77-1.775-0.8c-0.064-0.006-0.129-0.003-0.195-0.004   c-0.064,0.002-0.13-0.002-0.195,0.004c-0.603,0.031-1.22,0.265-1.775,0.8c-2.786,2.688-5.479,5.458-8.353,8.046   c-2.808-2.729-5.596-5.475-8.553-8.046c-1.104-0.96-2.973-1.239-4.039,0c-2.583,3.002-5.134,6.027-7.807,8.949   c-2.48,2.712,1.548,6.763,4.04,4.039c2.065-2.257,4.057-4.576,6.046-6.898c2.784,2.562,5.46,5.232,8.194,7.851   c1.202,1.152,2.822,1.012,4.039,0c2.961-2.457,5.668-5.175,8.402-7.873c2.732,2.698,5.44,5.416,8.402,7.873   c1.216,1.012,2.836,1.152,4.038,0c2.733-2.618,5.409-5.289,8.194-7.851c1.988,2.322,3.98,4.642,6.045,6.898   c2.49,2.724,6.52-1.326,4.04-4.039C59.543,30.562,56.994,27.537,54.411,24.535z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="for-booking-heading">
+                <h2>Our Customers Always 100% Satisfied</h2>
+              </div>
+              <div class="gallery-section-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed don eiusmod tempor enim minim veniam quis
+                  notrud exercitation </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="our-benefits-box">
+            <div class="our-benefits-box-inner">
+              <div class="our-benefits-svg-one">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg1635"
+                  xml:space="preserve" width="682.66669" height="682.66669" viewBox="0 0 682.66669 682.66669">
+                  <defs id="defs1639">
+                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1649">
+                      <path d="M 0,512 H 512 V 0 H 0 Z" id="path1647"></path>
+                    </clipPath>
+                  </defs>
+                  <g id="g1641" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
+                    <g id="g1643">
+                      <g id="g1645" clip-path="url(#clipPath1649)">
+                        <g id="g1651" transform="translate(169.1032,200.6704)">
+                          <path
+                            d="m 0,0 c 0,-44.625 -36.176,-80.802 -80.802,-80.802 -44.625,0 -80.801,36.177 -80.801,80.802 0,44.625 36.176,80.801 80.801,80.801 C -36.176,80.801 0,44.625 0,0"
+                            style="fill:#e1d3ce;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1653"></path>
+                        </g>
+                        <g id="g1655" transform="translate(135.0837,136.7549)">
+                          <path
+                            d="m 0,0 c -7.184,18.846 -25.413,32.24 -46.782,32.24 -21.464,0 -39.759,-13.512 -46.877,-32.49 -0.161,-0.43 -0.316,-0.862 -0.466,-1.296 13.307,-9.641 29.655,-15.34 47.343,-15.34 17.688,0 34.036,5.699 47.343,15.34 C 0.382,-1.027 0.195,-0.511 0,0"
+                            style="fill:#ffe177;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1657"></path>
+                        </g>
+                        <g id="g1659" transform="translate(112.9899,224.0259)">
+                          <path
+                            d="m 0,0 c 0,-16.399 -11.053,-29.693 -24.688,-29.693 -13.635,0 -24.688,13.294 -24.688,29.693 0,16.398 11.053,29.692 24.688,29.692 C -11.053,29.692 0,16.398 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1661"></path>
+                        </g>
+                        <g id="g1663" transform="translate(504.5002,200.6704)">
+                          <path
+                            d="m 0,0 c 0,-44.625 -36.176,-80.802 -80.802,-80.802 -44.625,0 -80.802,36.177 -80.802,80.802 0,44.625 36.177,80.801 80.802,80.801 C -36.176,80.801 0,44.625 0,0"
+                            style="fill:#e1d3ce;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1665"></path>
+                        </g>
+                        <g id="g1667" transform="translate(353.4802,240.6304)">
+                          <path
+                            d="m 0,0 c -6.723,-11.788 -10.583,-25.419 -10.583,-39.96 0,-35.817 23.312,-66.171 55.585,-76.767 1.09,6.587 1.666,13.347 1.666,20.242 C 46.668,-57.383 28.43,-22.544 0,0"
+                            style="fill:#cdbfba;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1669"></path>
+                        </g>
+                        <g id="g1671" transform="translate(470.4807,136.7549)">
+                          <path
+                            d="m 0,0 c -7.184,18.846 -25.414,32.24 -46.782,32.24 -21.464,0 -39.76,-13.512 -46.877,-32.49 -0.161,-0.43 -0.317,-0.862 -0.466,-1.296 13.307,-9.641 29.655,-15.34 47.343,-15.34 17.688,0 34.036,5.699 47.343,15.34 C 0.382,-1.027 0.195,-0.511 0,0"
+                            style="fill:#fd8087;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1673"></path>
+                        </g>
+                        <g id="g1675" transform="translate(376.8215,136.5044)">
+                          <path
+                            d="m 0,0 c -0.161,-0.429 -0.316,-0.861 -0.466,-1.296 6.68,-4.839 14.127,-8.683 22.125,-11.314 1.091,6.589 1.668,13.352 1.668,20.251 0,6.19 -0.462,12.271 -1.344,18.216 C 11.957,20.093 4.111,10.962 0,0"
+                            style="fill:#fe646f;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1677"></path>
+                        </g>
+                        <g id="g1679" transform="translate(483.3327,490.9297)">
+                          <path
+                            d="m 0,0 h -452.519 c -7.63,0 -13.816,-6.186 -13.816,-13.816 v -108.957 c 0,-7.631 6.186,-13.816 13.816,-13.816 h 182.212 c 4.096,0 7.88,-2.186 9.928,-5.733 l 26.958,-46.692 c 3.183,-5.513 11.14,-5.513 14.323,0 l 26.958,46.692 c 2.048,3.547 5.833,5.733 9.929,5.733 H 0 c 7.631,0 13.817,6.185 13.817,13.816 V -13.816 C 13.817,-6.186 7.631,0 0,0"
+                            style="fill:#ffe177;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1681"></path>
+                        </g>
+                        <g id="g1683" transform="translate(483.3327,490.9297)">
+                          <path
+                            d="m 0,0 h -16.183 v -102.773 c 0,-7.631 -6.186,-13.816 -13.817,-13.816 h -182.211 c -4.096,0 -7.881,-2.186 -9.929,-5.733 l -24.893,-43.116 13.612,-23.576 c 3.183,-5.513 11.14,-5.513 14.323,0 l 26.958,46.692 c 2.048,3.547 5.833,5.733 9.929,5.733 H 0 c 7.631,0 13.817,6.185 13.817,13.816 V -13.816 C 13.817,-6.186 7.631,0 0,0"
+                            style="fill:#ffd15b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1685"></path>
+                        </g>
+                        <g id="g1687" transform="translate(448.3869,224.0259)">
+                          <path
+                            d="m 0,0 c 0,-16.399 -11.054,-29.693 -24.688,-29.693 -13.635,0 -24.689,13.294 -24.689,29.693 0,16.398 11.054,29.692 24.689,29.692 C -11.054,29.692 0,16.398 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1689"></path>
+                        </g>
+                        <g id="g1691" transform="translate(380.1486,144.1455)">
+                          <path
+                            d="m 0,0 c 0,-67.973 -55.103,-123.075 -123.075,-123.075 -67.973,0 -123.075,55.102 -123.075,123.075 0,67.972 55.102,123.075 123.075,123.075 C -55.103,123.075 0,67.972 0,0"
+                            style="fill:#f3eae6;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1693"></path>
+                        </g>
+                        <g id="g1695" transform="translate(257.0734,267.2207)">
+                          <path
+                            d="m 0,0 c -5.079,0 -10.083,-0.314 -15,-0.912 60.896,-7.4 108.075,-59.269 108.075,-122.163 0,-62.895 -47.179,-114.763 -108.075,-122.164 4.917,-0.597 9.921,-0.911 15,-0.911 67.973,0 123.075,55.102 123.075,123.075 C 123.075,-55.103 67.973,0 0,0"
+                            style="fill:#e1d3ce;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1697"></path>
+                        </g>
+                        <g id="g1699" transform="translate(328.3307,46.791)">
+                          <path
+                            d="m 0,0 c -10.943,28.706 -38.709,49.107 -71.257,49.107 -32.693,0 -60.56,-20.582 -71.402,-49.488 -0.245,-0.654 -0.482,-1.312 -0.71,-1.975 20.268,-14.683 45.169,-23.364 72.112,-23.364 26.942,0 51.842,8.681 72.111,23.364 C 0.582,-1.564 0.297,-0.779 0,0"
+                            style="fill:#62dbfb;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1701"></path>
+                        </g>
+                        <g id="g1703" transform="translate(242.0734,21.9819)">
+                          <path
+                            d="M 0,0 C 14.757,-1.776 29.881,-0.935 44.312,2.61 59.966,6.444 74.443,13.276 87.111,22.453 84.831,29.104 81.589,35.427 77.622,41.129 58.164,18.91 30.844,3.748 0,0"
+                            style="fill:#01d0fb;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1705"></path>
+                        </g>
+                        <g id="g1707" transform="translate(294.6779,179.7197)">
+                          <path
+                            d="m 0,0 c 0,-24.978 -16.836,-45.227 -37.604,-45.227 -20.769,0 -37.605,20.249 -37.605,45.227 0,24.979 16.836,45.227 37.605,45.227 C -16.836,45.227 0,24.979 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1709"></path>
+                        </g>
+                        <g id="g1711" transform="translate(102.7307,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.271,-2.377 l 16.771,-2.437 c 3.564,-0.518 4.987,-4.898 2.408,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.226,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.2,3.229 -1.594,3.229 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1713"></path>
+                        </g>
+                        <g id="g1715" transform="translate(208.2233,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.272,-2.377 l 16.77,-2.437 c 3.565,-0.518 4.988,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.023,-0.999 -1.491,-2.437 -1.249,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.118,-6.257 -6.306,-4.58 l -15,7.885 c -1.265,0.666 -2.778,0.666 -4.043,0 l -15,-7.885 c -3.188,-1.677 -6.915,1.03 -6.306,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.249,3.847 l -12.136,11.828 c -2.579,2.514 -1.156,6.894 2.409,7.412 l 16.77,2.437 c 1.416,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.199,3.229 -1.594,3.229 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1717"></path>
+                        </g>
+                        <g id="g1719" transform="translate(313.7165,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.272,-2.377 l 16.77,-2.437 c 3.564,-0.518 4.988,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.199,3.229 -1.594,3.229 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1721"></path>
+                        </g>
+                        <g id="g1723" transform="translate(419.2097,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.271,-2.377 l 16.771,-2.437 c 3.564,-0.518 4.987,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.2,3.229 -1.594,3.229 0,0"
+                            style="fill:#faf7f7;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1725"></path>
+                        </g>
+                        <g id="g1727" transform="translate(112.9899,224.0259)">
+                          <path
+                            d="m 0,0 c 0,-16.399 -11.053,-29.693 -24.688,-29.693 -13.635,0 -24.688,13.294 -24.688,29.693 0,16.398 11.053,29.692 24.688,29.692 C -11.053,29.692 0,16.398 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1729"></path>
+                        </g>
+                        <g id="g1731" transform="translate(132.4797,142.4736)">
+                          <path
+                            d="m 0,0 c -8.423,15.78 -25.042,26.521 -44.178,26.521 -21.368,0 -39.597,-13.393 -46.782,-32.238"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1733"></path>
+                        </g>
+                        <g id="g1735" transform="translate(131.8703,132.6094)">
+                          <path
+                            d="m 0,0 c -12.572,-8.064 -27.524,-12.741 -43.569,-12.741 -44.625,0 -80.801,36.177 -80.801,80.802 0,44.626 36.176,80.801 80.801,80.801 34.709,0 64.306,-21.884 75.747,-52.607"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1737"></path>
+                        </g>
+                        <g id="g1739" transform="translate(448.3869,224.0259)">
+                          <path
+                            d="m 0,0 c 0,-16.399 -11.054,-29.693 -24.688,-29.693 -13.635,0 -24.689,13.294 -24.689,29.693 0,16.398 11.054,29.692 24.689,29.692 C -11.054,29.692 0,16.398 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1741"></path>
+                        </g>
+                        <g id="g1743" transform="translate(470.5637,136.5356)">
+                          <path
+                            d="m 0,0 c -7.126,18.961 -25.414,32.459 -46.865,32.459 -17.061,0 -32.12,-8.537 -41.155,-21.571"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1745"></path>
+                        </g>
+                        <g id="g1747" transform="translate(347.715,228.2373)">
+                          <path
+                            d="m 0,0 c 11.343,31.286 41.444,53.526 76.617,53.25 44.624,-0.35 80.515,-36.809 80.166,-81.433 -0.35,-44.624 -36.809,-80.515 -81.433,-80.165 -15.034,0.118 -29.077,4.334 -41.077,11.58"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1749"></path>
+                        </g>
+                        <g id="g1751" transform="translate(294.6779,179.7197)">
+                          <path
+                            d="m 0,0 c 0,-24.978 -16.836,-45.227 -37.604,-45.227 -20.769,0 -37.605,20.249 -37.605,45.227 0,24.979 16.836,45.227 37.605,45.227 C -16.836,45.227 0,24.979 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1753"></path>
+                        </g>
+                        <g id="g1755" transform="translate(328.4572,46.457)">
+                          <path
+                            d="m 0,0 c -10.854,28.881 -38.709,49.441 -71.384,49.441 -32.548,0 -60.313,-20.4 -71.257,-49.105"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1757"></path>
+                        </g>
+                        <g id="g1759" transform="translate(380.1486,144.1455)">
+                          <path
+                            d="m 0,0 c 0,-67.973 -55.103,-123.075 -123.075,-123.075 -67.973,0 -123.075,55.102 -123.075,123.075 0,67.972 55.102,123.075 123.075,123.075 C -55.103,123.075 0,67.972 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1761"></path>
+                        </g>
+                        <g id="g1763" transform="translate(102.7307,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.271,-2.377 l 16.771,-2.437 c 3.564,-0.518 4.987,-4.898 2.408,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.226,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.2,3.229 -1.594,3.229 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1765"></path>
+                        </g>
+                        <g id="g1767" transform="translate(208.2233,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.272,-2.377 l 16.77,-2.437 c 3.565,-0.518 4.988,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.023,-0.999 -1.491,-2.437 -1.249,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.118,-6.257 -6.306,-4.58 l -15,7.885 c -1.265,0.666 -2.778,0.666 -4.043,0 l -15,-7.885 c -3.188,-1.677 -6.915,1.03 -6.306,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.249,3.847 l -12.136,11.828 c -2.579,2.514 -1.156,6.894 2.409,7.412 l 16.77,2.437 c 1.416,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.199,3.229 -1.594,3.229 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1769"></path>
+                        </g>
+                        <g id="g1771" transform="translate(313.7165,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.272,-2.377 l 16.77,-2.437 c 3.564,-0.518 4.988,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.199,3.229 -1.594,3.229 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1773"></path>
+                        </g>
+                        <g id="g1775" transform="translate(419.2097,458.2852)">
+                          <path
+                            d="m 0,0 7.5,-15.197 c 0.633,-1.282 1.856,-2.171 3.271,-2.377 l 16.771,-2.437 c 3.564,-0.518 4.987,-4.898 2.409,-7.412 L 17.815,-39.251 c -1.024,-0.999 -1.491,-2.437 -1.25,-3.847 l 2.865,-16.703 c 0.609,-3.55 -3.117,-6.257 -6.305,-4.58 l -15,7.885 c -1.266,0.666 -2.778,0.666 -4.044,0 l -15,-7.885 c -3.188,-1.677 -6.914,1.03 -6.305,4.58 l 2.865,16.703 c 0.242,1.41 -0.225,2.848 -1.25,3.847 l -12.135,11.828 c -2.579,2.514 -1.156,6.894 2.408,7.412 l 16.771,2.437 c 1.415,0.206 2.639,1.095 3.272,2.377 L -7.793,0 C -6.2,3.229 -1.594,3.229 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1777"></path>
+                        </g>
+                        <g id="g1779" transform="translate(430.1486,354.3403)">
+                          <path
+                            d="m 0,0 h 53.185 c 7.63,0 13.816,6.186 13.816,13.816 v 108.957 c 0,7.631 -6.186,13.816 -13.817,13.816 h -408.328"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1781"></path>
+                        </g>
+                        <g id="g1783" transform="translate(45.0051,490.9297)">
+                          <path
+                            d="m 0,0 h -14.191 c -7.631,0 -13.817,-6.186 -13.817,-13.816 v -108.957 c 0,-7.631 6.186,-13.816 13.817,-13.816 h 182.212 c 4.095,0 7.88,-2.186 9.928,-5.733 l 26.958,-46.692 c 3.182,-5.513 11.14,-5.513 14.323,0 l 26.958,46.692 c 2.048,3.547 5.832,5.733 9.928,5.733 h 99.028"
+                            style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path1785"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="our-benefits-svg-two">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
+                  y="0px" width="62.995px" height="62.995px" viewBox="0 0 62.995 62.995"
+                  style="enable-background:new 0 0 62.995 62.995;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path
+                        d="M54.411,24.535c-1.065-1.239-2.934-0.96-4.038,0c-2.959,2.571-5.746,5.317-8.554,8.046   c-2.872-2.587-5.566-5.357-8.352-8.046c-0.556-0.536-1.171-0.77-1.775-0.8c-0.064-0.006-0.129-0.003-0.195-0.004   c-0.064,0.002-0.13-0.002-0.195,0.004c-0.603,0.031-1.22,0.265-1.775,0.8c-2.786,2.688-5.479,5.458-8.353,8.046   c-2.808-2.729-5.596-5.475-8.553-8.046c-1.104-0.96-2.973-1.239-4.039,0c-2.583,3.002-5.134,6.027-7.807,8.949   c-2.48,2.712,1.548,6.763,4.04,4.039c2.065-2.257,4.057-4.576,6.046-6.898c2.784,2.562,5.46,5.232,8.194,7.851   c1.202,1.152,2.822,1.012,4.039,0c2.961-2.457,5.668-5.175,8.402-7.873c2.732,2.698,5.44,5.416,8.402,7.873   c1.216,1.012,2.836,1.152,4.038,0c2.733-2.618,5.409-5.289,8.194-7.851c1.988,2.322,3.98,4.642,6.045,6.898   c2.49,2.724,6.52-1.326,4.04-4.039C59.543,30.562,56.994,27.537,54.411,24.535z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="for-booking-heading">
+                <h2>We Provide Easier & Faster Bookings</h2>
+              </div>
+              <div class="gallery-section-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed don eiusmod tempor enim minim veniam quis
+                  notrud exercitation </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="our-benefits-box">
+            <div class="our-benefits-box-inner">
+              <div class="our-benefits-svg-one">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg2679"
+                  xml:space="preserve" width="682.66669" height="682.66669" viewBox="0 0 682.66669 682.66669">
+                  <defs id="defs2683">
+                    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath2693">
+                      <path d="M 0,512 H 512 V 0 H 0 Z" id="path2691"></path>
+                    </clipPath>
+                  </defs>
+                  <g id="g2685" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
+                    <g id="g2687">
+                      <g id="g2689" clip-path="url(#clipPath2693)">
+                        <g id="g2695" transform="translate(452,390)">
+                          <path d="M 0,0 C -27.601,0 -50,-22.4 -50,-50 V -330 H 50 V -50 C 50,-22.39 27.609,0 0,0"
+                            style="fill:#ececf1;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2697"></path>
+                        </g>
+                        <g id="g2699" transform="translate(60,390)">
+                          <path d="M 0,0 C -27.601,0 -50,-22.4 -50,-50 V -330 H 50 V -50 C 50,-22.39 27.61,0 0,0"
+                            style="fill:#ececf1;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2701"></path>
+                        </g>
+                        <g id="g2703" transform="translate(260,190)">
+                          <path d="m 0,0 h 16 126 v 120 h -268 l 17.38,-16.55 c 0,0 74.059,-70.54 108.62,-103.45"
+                            style="fill:#7fe881;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2705"></path>
+                        </g>
+                        <g id="g2707" transform="translate(110,250)">
+                          <path
+                            d="m 0,0 v -190 c 0,27.61 -22.39,50 -50,50 -27.61,0 -50,-22.39 -50,-50 0,-29.077 25.248,-50 52.85,-50 H 0 l 126,120 z"
+                            style="fill:#76e2f8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2709"></path>
+                        </g>
+                        <g id="g2711" transform="translate(465.3203,108.2803)">
+                          <path
+                            d="m 0,0 c -33.36,8.62 -63.32,-16.33 -63.32,-48.28 v 70 h -86 l -120,-120 h 256 c 27.62,0 50,22.38 50,50 C 36.68,-24.172 20.369,-5.263 0,0"
+                            style="fill:#76e2f8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2713"></path>
+                        </g>
+                        <g id="g2715" transform="translate(402,190)">
+                          <path
+                            d="m 0,0 v -60 h -86 l -120,-120 h -86 l 126,120 -126,120 v 60 h 24 l 17.38,-16.55 c 0,0 74.059,-70.54 108.62,-103.45 h 16 z"
+                            style="fill:#fed2a4;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2717"></path>
+                        </g>
+                        <g id="g2719" transform="translate(256,502)">
+                          <path
+                            d="M 0,0 C 49.71,0 90,-40.29 90,-90 90,-114.49 68.17,-156.09 46.01,-192 23.18,-229.02 0,-260 0,-260 c 0,0 -23.18,30.98 -46.01,68 -22.16,35.91 -43.99,77.51 -43.99,102 0,49.71 40.29,90 90,90"
+                            style="fill:#ff637b;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2721"></path>
+                        </g>
+                        <g id="g2723" transform="translate(256,452)">
+                          <path
+                            d="m 0,0 c 22.06,0 40,-17.94 40,-40 0,-22.06 -17.94,-40 -40,-40 -22.06,0 -40,17.94 -40,40 0,22.06 17.94,40 40,40"
+                            style="fill:#ececf1;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2725"></path>
+                        </g>
+                        <g id="g2727" transform="translate(10,284)">
+                          <path
+                            d="M 0,0 V 56 C 0,69.8 5.6,82.3 14.65,91.35 23.7,100.4 36.2,106 50,106 77.61,106 100,83.61 100,56 V 26"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2729"></path>
+                        </g>
+                        <g id="g2731" transform="translate(110,250)">
+                          <path
+                            d="m 0,0 v -190 c 0,27.61 -22.39,50 -50,50 -27.61,0 -50,-22.39 -50,-50 0,-1.7 0.09,-3.42 0.26,-5.16 2.6,-26.02 26.44,-44.84 52.59,-44.84 H 0"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2733"></path>
+                        </g>
+                        <g id="g2735" transform="translate(196,10)">
+                          <path d="m 0,0 h 256 c 27.62,0 50,22.38 50,50"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2737"></path>
+                        </g>
+                        <g id="g2739" transform="translate(402,130)">
+                          <path
+                            d="m 0,0 v -70 c 0,31.95 29.96,56.9 63.32,48.28 16.84,-4.35 30.61,-18.12 34.96,-34.96 1.17,-4.53 1.72,-8.99 1.72,-13.32 v 280 c 0,27.61 -22.39,50 -50,50 C 36.2,260 23.7,254.4 14.65,245.35 5.6,236.3 0,223.8 0,210 V 180 60"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2741"></path>
+                        </g>
+                        <g id="g2743" transform="translate(10,204)">
+                          <path d="M 0,0 V -144"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2745"></path>
+                        </g>
+                        <g id="g2747" transform="translate(402,310)">
+                          <path d="M 0,0 H -99.99"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2749"></path>
+                        </g>
+                        <g id="g2751" transform="translate(402,190)">
+                          <path
+                            d="m 0,0 v -60 h -86 l -120,-120 h -86 l 126,120 -126,120 v 60 h 24 l 17.38,-16.55 c 0,0 74.059,-70.54 108.62,-103.45 h 16 z"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2753"></path>
+                        </g>
+                        <g id="g2755" transform="translate(209.9902,310)">
+                          <path d="M 0,0 H -75.99"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2757"></path>
+                        </g>
+                        <g id="g2759" transform="translate(302.0098,310)">
+                          <path
+                            d="m 0,0 c 22.16,35.91 43.99,77.51 43.99,102 0,49.71 -40.29,90 -90,90 -49.71,0 -90,-40.29 -90,-90 0,-24.49 21.83,-66.09 43.99,-102 22.831,-37.02 46.01,-68 46.01,-68 0,0 23.18,30.98 46.01,68 z"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2761"></path>
+                        </g>
+                        <g id="g2763" transform="translate(256,372)">
+                          <path
+                            d="M 0,0 C 22.06,0 40,17.94 40,40 40,62.06 22.06,80 0,80 -22.06,80 -40,62.06 -40,40 -40,17.94 -22.06,0 0,0 Z"
+                            style="fill:none;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                            id="path2765"></path>
+                        </g>
+                        <g id="g2767" transform="translate(10,254)">
+                          <path
+                            d="m 0,0 c 5.52,0 10,-4.48 10,-10 0,-5.52 -4.48,-10 -10,-10 -5.52,0 -10,4.48 -10,10 0,5.52 4.48,10 10,10"
+                            style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path2769"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="our-benefits-svg-two">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
+                  y="0px" width="62.995px" height="62.995px" viewBox="0 0 62.995 62.995"
+                  style="enable-background:new 0 0 62.995 62.995;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path
+                        d="M54.411,24.535c-1.065-1.239-2.934-0.96-4.038,0c-2.959,2.571-5.746,5.317-8.554,8.046   c-2.872-2.587-5.566-5.357-8.352-8.046c-0.556-0.536-1.171-0.77-1.775-0.8c-0.064-0.006-0.129-0.003-0.195-0.004   c-0.064,0.002-0.13-0.002-0.195,0.004c-0.603,0.031-1.22,0.265-1.775,0.8c-2.786,2.688-5.479,5.458-8.353,8.046   c-2.808-2.729-5.596-5.475-8.553-8.046c-1.104-0.96-2.973-1.239-4.039,0c-2.583,3.002-5.134,6.027-7.807,8.949   c-2.48,2.712,1.548,6.763,4.04,4.039c2.065-2.257,4.057-4.576,6.046-6.898c2.784,2.562,5.46,5.232,8.194,7.851   c1.202,1.152,2.822,1.012,4.039,0c2.961-2.457,5.668-5.175,8.402-7.873c2.732,2.698,5.44,5.416,8.402,7.873   c1.216,1.012,2.836,1.152,4.038,0c2.733-2.618,5.409-5.289,8.194-7.851c1.988,2.322,3.98,4.642,6.045,6.898   c2.49,2.724,6.52-1.326,4.04-4.039C59.543,30.562,56.994,27.537,54.411,24.535z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="for-booking-heading">
+                <h2>Your Choice of Any Pickup Location</h2>
+              </div>
+              <div class="gallery-section-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed don eiusmod tempor enim minim veniam quis
+                  notrud exercitation </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting Rental work -->
+  <section class="rental-work">
+    <div class="rental-work-video">
+      <video autoplay loop muted playsinline>
+        <source src="video/car-showroom-buyer.mp4">
+      </video>
+      <div class="rental-work-content">
+        <div class="container">
+          <div class="rental-work-heading">
+            <h2>HOW DOES THE <br> OUR RENTAL WORKS</h2>
+            <div class="our-benefits-svg-two">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1" x="0px"
+                y="0px" width="62.995px" height="62.995px" viewBox="0 0 62.995 62.995"
+                style="enable-background:new 0 0 62.995 62.995;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M54.411,24.535c-1.065-1.239-2.934-0.96-4.038,0c-2.959,2.571-5.746,5.317-8.554,8.046   c-2.872-2.587-5.566-5.357-8.352-8.046c-0.556-0.536-1.171-0.77-1.775-0.8c-0.064-0.006-0.129-0.003-0.195-0.004   c-0.064,0.002-0.13-0.002-0.195,0.004c-0.603,0.031-1.22,0.265-1.775,0.8c-2.786,2.688-5.479,5.458-8.353,8.046   c-2.808-2.729-5.596-5.475-8.553-8.046c-1.104-0.96-2.973-1.239-4.039,0c-2.583,3.002-5.134,6.027-7.807,8.949   c-2.48,2.712,1.548,6.763,4.04,4.039c2.065-2.257,4.057-4.576,6.046-6.898c2.784,2.562,5.46,5.232,8.194,7.851   c1.202,1.152,2.822,1.012,4.039,0c2.961-2.457,5.668-5.175,8.402-7.873c2.732,2.698,5.44,5.416,8.402,7.873   c1.216,1.012,2.836,1.152,4.038,0c2.733-2.618,5.409-5.289,8.194-7.851c1.988,2.322,3.98,4.642,6.045,6.898   c2.49,2.724,6.52-1.326,4.04-4.039C59.543,30.562,56.994,27.537,54.411,24.535z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="rental-car-box">
+            <div class="rental-car-box-inner">
+              <div class="rental-car-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" height="512" viewBox="0 0 512 512" width="512">
+                  <g id="outline">
+                    <path
+                      d="m88.014 339.7a174.75 174.75 0 0 0 119.832 47.242c2.113 0 4.237-.038 6.359-.112a174.716 174.716 0 0 0 98.621-34.469l119.174 111.05q.559.52 1.139 1.013a31.737 31.737 0 0 0 20.649 7.576c.384 0 .771-.006 1.156-.02a32 32 0 0 0 20.688-55.391l-119.174-111.054a176.085 176.085 0 0 0 -28.471-223.36c-71-66.162-182.587-62.225-248.747 8.773a176 176 0 0 0 8.774 248.752zm376.71 88.6a16 16 0 0 1 -21.816 23.411l-81.938-76.361 21.815-23.411zm-93.644-87.269-21.816 23.412-23.941-22.31q5.928-5.32 11.438-11.212t10.378-12.2zm-280.135-239.175c60.148-64.544 161.589-68.122 226.134-7.976a160.059 160.059 0 0 1 22.589 208.006c-.05.065-.094.134-.141.2a162.384 162.384 0 0 1 -31.458 33.726l-.04.034a160.014 160.014 0 0 1 -217.084-233.99z">
+                    </path>
+                    <path
+                      d="m88 218.935h17.013a32 32 0 0 0 61.974 0h74.026a32 32 0 0 0 62.423-2.046l19.094-6.365a8 8 0 0 0 5.47-7.589v-24a32.053 32.053 0 0 0 -26.849-31.586l-8.191-16.384a28.843 28.843 0 0 0 -25.939-16.03h-80.521a29.136 29.136 0 0 0 -23.2 11.6l-15.662 20.882-39.607 4.951a32.05 32.05 0 0 0 -28.031 31.753v26.814a8 8 0 0 0 8 8zm48 8a16 16 0 1 1 16-16 16.019 16.019 0 0 1 -16 16zm136 0a16 16 0 1 1 16-16 16.019 16.019 0 0 1 -16 16zm-24-96h19.021a12.927 12.927 0 0 1 11.628 7.186l4.407 8.814h-35.056zm-71.9 5.2a13.058 13.058 0 0 1 10.4-5.2h45.5v16h-64zm-80.1 47.986a16.025 16.025 0 0 1 14.016-15.876l42.48-5.31h143.504a16.018 16.018 0 0 1 16 16v18.233l-9.78 3.261a32 32 0 0 0 -61.207 2.506h-74.026a32 32 0 0 0 -61.974 0h-9.013z">
+                    </path>
+                    <path
+                      d="m296 258.935h-176a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-40 32h-128v-16h128zm32 0h-16v-16h16z">
+                    </path>
+                  </g>
+                </svg>
+              </div>
+              <div class="rental-car-content">
+                <h3>find car</h3>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing</p>
+              </div>
+            </div>
+            <div class="svg-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg10654" height="512"
+                viewBox="0 0 6.3499999 6.3500002" width="512">
+                <g id="layer1" transform="translate(0 -290.65)">
+                  <path id="path9429"
+                    d="m2.2580394 291.96502a.26460982.26460982 0 0 0 -.1741496.46871l1.6190225 1.38699-1.6190225 1.38648a.26460982.26460982 0 1 0 .3436483.40049l1.8536335-1.58595a.26460982.26460982 0 0 0 0-.40256l-1.8536335-1.5875a.26460982.26460982 0 0 0 -.1694987-.0667z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            <div class="rental-car-box-inner">
+              <div class="rental-car-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512">
+                  <g id="car">
+                    <path
+                      d="M32,55h0a1,1,0,0,1-.8945-.5527L25.7607,43.7661a2.8958,2.8958,0,0,0-1.4062-1.3667,19.0022,19.0022,0,1,1,15.3047-.0063,2.9214,2.9214,0,0,0-1.419,1.3725L32.8945,54.4478A1.0009,1.0009,0,0,1,32,55ZM31.9766,7.9985A16.8064,16.8064,0,0,0,20.666,12.33a17.005,17.005,0,0,0,4.4951,28.24A4.9056,4.9056,0,0,1,27.55,42.8716L32,51.7656l4.4512-8.895a4.9281,4.9281,0,0,1,2.4-2.3071A17.0056,17.0056,0,0,0,33.9482,8.1079,17.9157,17.9157,0,0,0,31.9766,7.9985Z">
+                    </path>
+                    <path
+                      d="M32,39A14,14,0,1,1,46,25,14.0158,14.0158,0,0,1,32,39Zm0-26A12,12,0,1,0,44,25,12.0134,12.0134,0,0,0,32,13Z">
+                    </path>
+                    <path
+                      d="M32,59c-8.9932,0-26-1.3584-26-6.5,0-4.2554,12.12-6.1343,22.5-6.45a1.0242,1.0242,0,0,1,1.03.9692,1.0007,1.0007,0,0,1-.97,1.03C14.8711,48.4658,8,51.127,8,52.5,8,54.0273,16.4707,57,32,57s24-2.9727,24-4.5c0-1.373-6.8672-4.0342-20.55-4.4507a1,1,0,0,1,.0293-2l.0312.0005C45.8857,46.3662,58,48.2446,58,52.5,58,57.6416,40.9932,59,32,59Z">
+                    </path>
+                    <path
+                      d="M38,30H26a2.0023,2.0023,0,0,1-2-2V24a2.0023,2.0023,0,0,1,2-2H38a2.0023,2.0023,0,0,1,2,2v4A2.0023,2.0023,0,0,1,38,30ZM26,24v4H38.001L38,24Z">
+                    </path>
+                    <path
+                      d="M37,24H27a1,1,0,0,1-.9863-1.1646l.5547-3.3286A2.9918,2.9918,0,0,1,29.5273,17h4.9454a2.9918,2.9918,0,0,1,2.9589,2.5063l.5547,3.3291A1,1,0,0,1,37,24Zm-8.8193-2h7.6386l-.36-2.1641A.9977.9977,0,0,0,34.4727,19H29.5273a.9977.9977,0,0,0-.9863.8364Z">
+                    </path>
+                    <path
+                      d="M25.8555,23.854a.9989.9989,0,0,1-.9092-.5815L24.3594,22H24a1,1,0,0,1,0-2h1a1,1,0,0,1,.9082.5815l.8545,1.854a1,1,0,0,1-.9072,1.4185Z">
+                    </path>
+                    <path
+                      d="M38.1445,23.854a1,1,0,0,1-.9072-1.4185l.8545-1.854A1,1,0,0,1,39,20h1a1,1,0,0,1,0,2h-.3594l-.5869,1.2725A1,1,0,0,1,38.1445,23.854Z">
+                    </path>
+                    <circle cx="28" cy="26" r="1"></circle>
+                    <circle cx="36" cy="26" r="1"></circle>
+                    <path
+                      d="M28.75,33h-1.5A2.2528,2.2528,0,0,1,25,30.75V29a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v1.75A2.2528,2.2528,0,0,1,28.75,33ZM27,30v.75a.25.25,0,0,0,.25.25h1.5a.25.25,0,0,0,.25-.25V30Z">
+                    </path>
+                    <path
+                      d="M36.75,33h-1.5A2.2528,2.2528,0,0,1,33,30.75V29a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1v1.75A2.2528,2.2528,0,0,1,36.75,33ZM35,30v.75a.25.25,0,0,0,.25.25h1.5a.25.25,0,0,0,.25-.25V30Z">
+                    </path>
+                    <path d="M33,27H31a1,1,0,0,1,0-2h2a1,1,0,0,1,0,2Z"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="rental-car-content">
+                <h3>Select location</h3>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing</p>
+              </div>
+            </div>
+            <div class="svg-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg10654" height="512"
+                viewBox="0 0 6.3499999 6.3500002" width="512">
+                <g id="layer1" transform="translate(0 -290.65)">
+                  <path id="path9429"
+                    d="m2.2580394 291.96502a.26460982.26460982 0 0 0 -.1741496.46871l1.6190225 1.38699-1.6190225 1.38648a.26460982.26460982 0 1 0 .3436483.40049l1.8536335-1.58595a.26460982.26460982 0 0 0 0-.40256l-1.8536335-1.5875a.26460982.26460982 0 0 0 -.1694987-.0667z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            <div class="rental-car-box-inner">
+              <div class="rental-car-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 124 124" width="512">
+                  <path
+                    d="m118.052 26.953-88.813-15.842c-3.892-.7-7.673 2.023-8.348 5.894l-5.72 32.814h-8.171c-3.86 0-7 3.141-7 7v49.18c0 3.859 3.14 7 7 7h90.587c3.86 0 7-3.141 7-7v-17.293c2.595.463 5.1 1.009 7.499-.426 1.8-1.077 3.091-2.934 3.452-5.003l8.352-47.916c.687-3.941-1.932-7.713-5.838-8.408zm-93.22-9.261c.3-1.719 1.968-2.954 3.705-2.644l88.813 15.842c1.743.311 2.909 2.008 2.6 3.783l-1.378 7.91-95.122-16.966zm75.755 88.307c0 1.654-1.346 3-3 3h-90.587c-1.654 0-3-1.346-3-3v-49.18c0-1.654 1.346-3 3-3h90.587c1.654 0 3 1.346 3 3zm11.011-23.409c-.622 3.557-4.572 2.488-7.011 2.053v-27.824c0-3.859-3.14-7-7-7h-78.355l3.531-20.262 5.794 1.033 89.327 15.933z">
+                  </path>
+                  <path d="m47.119 101.003h-11.5c-1.104 0-2-.896-2-2s.896-2 2-2h11.5c1.104 0 2 .896 2 2s-.895 2-2 2z">
+                  </path>
+                  <path d="m25.271 101.003h-11.5c-1.104 0-2-.896-2-2s.896-2 2-2h11.5c1.104 0 2 .896 2 2s-.896 2-2 2z">
+                  </path>
+                  <path d="m68.967 101.003h-11.5c-1.104 0-2-.896-2-2s.896-2 2-2h11.5c1.104 0 2 .896 2 2s-.895 2-2 2z">
+                  </path>
+                  <path d="m90.816 101.003h-11.5c-1.104 0-2-.896-2-2s.896-2 2-2h11.5c1.104 0 2 .896 2 2s-.896 2-2 2z">
+                  </path>
+                  <path
+                    d="m30.438 90.627h-14.486c-2.757 0-5-2.243-5-5v-5.744c0-2.757 2.243-5 5-5h14.486c2.757 0 5 2.243 5 5v5.744c0 2.756-2.244 5-5 5zm-14.486-11.745c-.551 0-1 .448-1 1v5.744c0 .552.449 1 1 1h14.486c.551 0 1-.448 1-1v-5.744c0-.552-.449-1-1-1z">
+                  </path>
+                </svg>
+              </div>
+              <div class="rental-car-content">
+                <h3>Place your order</h3>
+                <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting the fleets gallery -->
+  <section>
+    <div class="container">
+      <div class="gallery-section-banner">
+        <div class="gallery-section-content fleets-gallery-content">
+          <h2>the fleets gallery</h2>
+          <h5>Luxury Rental Services</h5>
+          <div class="gallery-section-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed don eiusmod tempor enim minim veniam quis
+              notrud exercitation </p>
+          </div>
+        </div>
+      </div>
+      <div class="fleets-gallery-slider-inner">
+        <div class="fleets-gallery-slider">
+          <div class="fleets-gallery-slider-wrap">
+            <div class="fleets-gallery-slider-img">
+              <a href="#"><img src="images/car-12.jpg" alt="car"></a>
+            </div>
+            <div class="fleets-gallery-box">
+              <div class="fleets-gallery-box-inner">
+                <h4 class="title-h4">pajero range</h4>
+              </div>
+              <div class="fleets-gallery-img">
+                <ul>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/9856/9856862.png " alt="" title=""
+                      class="img-small">
+                    4980
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/865/865998.png " alt="" title=""
+                      class="img-small">
+                    hybrid
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/17561/17561106.png " alt="" title=""
+                      class="img-small">
+                    manual
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="car-features">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Free cancellation</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Mileage</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Audio input</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Bluetooth</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Heated seats</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Pay at Pick-Up</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Budget Car</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Chilled AC</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Automatic</li>
+                </ul>
+              </div>
+              <div class="rent-sec">
+                <span>$340.00</span>
+                <div class="rent-btn">
+                  <a href="#">Rent it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleets-gallery-slider-wrap">
+            <div class="fleets-gallery-slider-img">
+              <a href="#"><img src="images/car-10.jpg" alt="car"></a>
+            </div>
+            <div class="fleets-gallery-box">
+              <div class="fleets-gallery-box-inner">
+                <h4 class="title-h4">Mirage range</h4>
+              </div>
+              <div class="fleets-gallery-img">
+                <ul>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/9856/9856862.png " alt="" title=""
+                      class="img-small">
+                    4980
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/865/865998.png " alt="" title=""
+                      class="img-small">
+                    hybrid
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/17561/17561106.png " alt="" title=""
+                      class="img-small">
+                    manual
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="car-features">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Free cancellation</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Mileage</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Audio input</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Bluetooth</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Heated seats</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Pay at Pick-Up</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Budget Car</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Chilled AC</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Automatic</li>
+                </ul>
+              </div>
+              <div class="rent-sec">
+                <span>$650.00</span>
+                <div class="rent-btn">
+                  <a href="#">Rent it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleets-gallery-slider-wrap">
+            <div class="fleets-gallery-slider-img">
+              <a href="#"><img src="images/car-9.jpg" alt="car"></a>
+            </div>
+            <div class="fleets-gallery-box">
+              <div class="fleets-gallery-box-inner">
+                <h4 class="title-h4">Mitsubishi Lancer</h4>
+              </div>
+              <div class="fleets-gallery-img">
+                <ul>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/9856/9856862.png " alt="" title=""
+                      class="img-small">
+                    4980
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/865/865998.png " alt="" title=""
+                      class="img-small">
+                    hybrid
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/17561/17561106.png " alt="" title=""
+                      class="img-small">
+                    manual
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="car-features">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Free cancellation</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Mileage</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Audio input</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Bluetooth</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Heated seats</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Pay at Pick-Up</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Budget Car</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Chilled AC</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Automatic</li>
+                </ul>
+              </div>
+              <div class="rent-sec">
+                <span>$440.00</span>
+                <div class="rent-btn">
+                  <a href="#">Rent it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleets-gallery-slider-wrap">
+            <div class="fleets-gallery-slider-img">
+              <a href="#"><img src="images/car-13.jpg" alt="car"></a>
+            </div>
+            <div class="fleets-gallery-box">
+              <div class="fleets-gallery-box-inner">
+                <h4 class="title-h4">xv range subaru</h4>
+              </div>
+              <div class="fleets-gallery-img">
+                <ul>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/9856/9856862.png " alt="" title=""
+                      class="img-small">
+                    4980
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/865/865998.png " alt="" title=""
+                      class="img-small">
+                    petrol+cng
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/17561/17561106.png " alt="" title=""
+                      class="img-small">
+                    manual
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="car-features">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Free cancellation</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Mileage</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Audio input</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Bluetooth</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Heated seats</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Pay at Pick-Up</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Budget Car</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Chilled AC</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Automatic</li>
+                </ul>
+              </div>
+              <div class="rent-sec">
+                <span>$500.00</span>
+                <div class="rent-btn">
+                  <a href="#">Rent it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleets-gallery-slider-wrap">
+            <div class="fleets-gallery-slider-img">
+              <a href="#"><img src="images/car-11.jpg" alt="car"></a>
+            </div>
+            <div class="fleets-gallery-box">
+              <div class="fleets-gallery-box-inner">
+                <h4 class="title-h4">subaru liberty</h4>
+              </div>
+              <div class="fleets-gallery-img">
+                <ul>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/9856/9856862.png " alt="" title=""
+                      class="img-small">
+                    4980
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/865/865998.png " alt="" title=""
+                      class="img-small">
+                    hybrid
+                  </li>
+                  <li>
+                    <img src="   https://cdn-icons-png.flaticon.com/512/17561/17561106.png " alt="" title=""
+                      class="img-small">
+                    manual
+                  </li>
+                </ul>
+              </div>
+              <hr>
+              <div class="car-features">
+                <ul>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Free cancellation</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited Mileage</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Audio input</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Bluetooth</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Heated seats</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Pay at Pick-Up</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Budget Car</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Chilled AC</li>
+                  <li><i class="fa fa-check" aria-hidden="true"></i>Automatic</li>
+                </ul>
+              </div>
+              <div class="rent-sec">
+                <span>$650.00</span>
+                <div class="rent-btn">
+                  <a href="#">Rent it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting rental-service -->
+  <section class="rental-service">
+    <div class="container">
+      <div class="row">
+        <div class="rental-service-column">
+          <div class="rental-service-column-content">
+            <h2>Autostar Rental Service With a wide range of Vehicles</h2>
+            <p>Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia eget lorem acdua eros pharetral
+              interdum quisque convallis nula dpsum val mualiq amet consectetur adipisicing sed eiusmod tem pory.</p>
+          </div>
+          <div class="competitive-prices">
+            <div class="competitive-prices-block">
+              <div class="competitive-prices-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="512" viewBox="0 0 512.003 512.003"
+                  width="512">
+                  <path
+                    d="m511.159 410.98-47.915-271.736c-3.3-18.715-15.773-34.179-33.366-41.365l-114.333-46.703c-4.924-2.011-10.054-3.255-15.223-3.768l-6.173-35.009c-1.438-8.158-9.213-13.604-17.376-12.167-8.159 1.438-13.606 9.218-12.167 17.376l6.174 35.013c-4.612 2.219-8.945 5.095-12.838 8.601l-12.95 11.663-1.92-1.742c-3.939-3.574-8.334-6.498-13.016-8.748l7.897-44.787c1.438-8.158-4.009-15.938-12.167-17.376-8.157-1.443-15.938 4.008-17.376 12.167l-7.898 44.79c-5.093.508-10.148 1.729-15.006 3.693l-115.364 46.621c-17.697 7.152-30.242 22.644-33.557 41.443l-35.741 202.702c-5.266 29.867 14.748 58.449 44.614 63.715l146.08 25.758 4.483 25.427c4.699 26.651 27.961 45.455 54.137 45.455 3.159 0 6.362-.274 9.578-.841l206.81-36.466c29.865-5.267 49.879-33.849 44.613-63.716zm-49.823 34.171-206.81 36.466c-6.577 1.159-13.21-.311-18.681-4.142-5.47-3.83-9.121-9.562-10.281-16.138l-2.587-14.673 29.289 5.165c3.227.569 6.458.85 9.667.85 11.181 0 22.08-3.414 31.43-9.961 12.035-8.426 20.067-21.035 22.618-35.502l35.759-202.8c3.3-18.716-3.133-37.513-17.206-50.282l-67.214-60.987 10.695-9.632c4.656-4.192 10.69-6.403 16.786-6.403 3.178 0 6.374.602 9.398 1.837l114.333 46.703c7.997 3.267 13.667 10.295 15.167 18.802l47.915 271.735c2.395 13.576-6.703 26.568-20.278 28.962zm-430.949-88.294 35.743-202.702c1.507-8.545 7.209-15.587 15.253-18.838l113.434-45.842-3.251 18.44c-1.438 8.158 4.009 15.938 12.167 17.376.881.156 1.757.23 2.622.23 7.142 0 13.471-5.121 14.754-12.398l3.253-18.447 90.014 81.675c6.396 5.804 9.32 14.348 7.821 22.855l-35.759 202.8c-1.16 6.576-4.811 12.307-10.281 16.137-5.47 3.831-12.104 5.301-18.681 4.142l-206.81-36.466c-13.575-2.394-22.672-15.386-20.279-28.962z">
+                  </path>
+                  <path
+                    d="m151.107 348.849-2.395 13.582c-.959 5.439 2.673 10.625 8.112 11.584.587.104 1.171.153 1.748.153 4.761 0 8.981-3.414 9.836-8.265l2.528-14.334c10.277-.032 20.086-2.888 28.79-8.45 10.361-6.621 18.337-16.66 22.458-28.27 8.39-23.635-.627-47.065-22.971-59.69-3.692-2.086-7.088-4.059-10.229-5.942l9.991-56.662c7.023 2.587 11.065 6.848 13.756 9.69.766.809 1.49 1.574 2.23 2.258 4.056 3.749 10.382 3.5 14.131-.554 3.749-4.055 3.501-10.382-.554-14.131-.251-.232-.776-.786-1.283-1.322-3.626-3.831-11.205-11.834-24.775-15.818l2.065-11.714c.959-5.439-2.673-10.625-8.112-11.584-5.439-.958-10.625 2.672-11.584 8.112l-2.273 12.889c-2.06.077-4.191.231-6.417.495-16.463 1.953-30.508 13.287-36.656 29.58-5.588 14.81-3.313 30.417 5.938 40.73 5.162 5.755 11.904 11.378 21.512 17.793l-12.373 70.171c-9.74-2.245-15.677-5.39-25.201-14.33-4.026-3.78-10.355-3.581-14.135.446-3.78 4.026-3.581 10.355.446 14.135 12.963 12.167 22.364 16.54 35.417 19.448zm52.229-40.689c-3.902 10.993-14.198 21.625-28.837 23.202l10.778-61.126c1.328.765 2.693 1.544 4.096 2.337 20.555 11.613 15.885 30.175 13.963 35.587zm-43.007-80.329c-4.246-4.734-5.056-12.518-2.114-20.315 2.744-7.273 9.518-15.5 20.299-16.779.163-.019.319-.032.481-.05l-8.2 46.505c-4.376-3.317-7.794-6.384-10.466-9.361z">
+                  </path>
+                </svg>
+              </div>
+              <div class="competitive-prices-content">
+                <h3>Easy & Competitive Prices</h3>
+                <p>Faucibus gravida aliquam nulla lectus lacinia eget</p>
+              </div>
+            </div>
+            <div class="competitive-prices-block">
+              <div class="competitive-prices-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 511.488 511.488"
+                  width="512">
+                  <path
+                    d="m474.466 464.365c-5.75-26.34-35.749-128.779-150.967-165.362 12.239-7.699 23.089-17.412 32.066-28.684h44.816c25.978 0 47.111-21.134 47.111-47.11v-64.222c0-10.886-3.721-20.913-9.945-28.899-60.077-173.3-303.03-173.602-363.331.002-6.222 7.986-9.943 18.012-9.943 28.897v64.222c0 25.977 21.134 47.11 47.11 47.11h44.817c8.977 11.272 19.827 20.986 32.066 28.684-115.174 36.561-145.383 138.973-151.191 165.269-5.052 22.23 11.692 47.216 38.232 47.216 78.106 0 285.586 0 361.151-.241 25.879-.001 42.925-23.939 38.008-46.882zm-56.973-305.378v64.222c0 9.435-7.676 17.11-17.111 17.11h-26.975c13.117-30.742 13.117-67.701 0-98.443h26.975c9.435-.001 17.111 7.675 17.111 17.111zm-279.134 81.332h-26.976c-9.435 0-17.11-7.676-17.11-17.11v-64.222c0-9.436 7.676-17.111 17.11-17.111h26.976c-13.117 30.742-13.117 67.7 0 98.443zm-22.969-128.444c60.204-109.578 220.815-109.503 280.988 0h-40.813c-49.021-63.78-150.367-63.756-199.365 0zm43.104 79.222c0-53.7 43.688-97.388 97.388-97.388 66.214-1.29 115.139 69.016 91.57 130.555h-59.458c-19.872.734-19.874 29.266 0 30h41.95c-57.632 68.21-171.447 27.201-171.45-63.167zm284.825 286.892c-1.685 2.07-4.186 3.258-6.908 3.258-75.566.241-283.01.241-361.104.241-5.534.137-10.148-5.427-8.913-10.863 46.283-199.471 330.174-203.884 378.739.035.521 2.603-.138 5.271-1.814 7.329z">
+                  </path>
+                </svg>
+              </div>
+              <div class="competitive-prices-content">
+                <h3>Breakdown Assistance</h3>
+                <p>Faucibus gravida aliquam nulla lectus lacinia eget</p>
+              </div>
+            </div>
+            <div class="competitive-prices-block">
+              <div class="competitive-prices-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" width="512"
+                  height="512">
+                  <style type="text/css">
+                    .st0 {
+                      display: none;
+                    }
+                  </style>
+                  <g id="_x31_9_Private_Storage">
+                    <g>
+                      <path
+                        d="M16,1.9355469L4,6.2998047V16c0,10.9609375,11.6445313,13.9423828,11.7617188,13.9716797L16,30.0292969    l0.2382813-0.0576172C16.3554688,29.9423828,28,26.9609375,28,16V6.2998047L16,1.9355469z M26,16    c0,8.6787109-8.4091797,11.5068359-9.9960938,11.9628906C14.4736328,27.5097656,6,24.6044922,6,16V7.7001953l10-3.6357422    l10,3.6357422V16z">
+                      </path>
+                      <polygon
+                        points="10.7070313,15.2929688 9.2929688,16.7070313 14,21.4140625 22.7070313,12.7070313 21.2929688,11.2929688     14,18.5859375   ">
+                      </polygon>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="competitive-prices-content">
+                <h3>Trusted Rent Service</h3>
+                <p>Faucibus gravida aliquam nulla lectus lacinia eget</p>
+              </div>
+            </div>
+            <div class="competitive-prices-block">
+              <div class="competitive-prices-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 512 512" width="512"
+                  data-name="Layer 1">
+                  <path
+                    d="m114.1 133.956a16 16 0 0 0 14.5 9.231h77.8v27.481a16 16 0 0 0 32 0v-27.481h7.37a16 16 0 1 0 0-32h-7.37v-96.015a16 16 0 0 0 -28.264-10.272l-93.806 112.015a16 16 0 0 0 -2.23 17.041zm92.3-74.756v51.989h-43.535zm80.97 339.867 83.822-130.867h-61.718a16 16 0 0 1 0-32h90.967a16 16 0 0 1 13.473 24.63l-99.6 155.5a16 16 0 1 1 -26.946-17.26zm83.76-294.007a16 16 0 0 1 0 22.627l-235.858 235.859a16 16 0 0 1 -22.627-22.627l235.855-235.859a16 16 0 0 1 22.63 0zm-280.63-33.522c4.05-14.83 1.483-26-7.629-33.215-10.2-8.07-27.183-9.5-38.664-3.246-8.722 4.75-12.587 12.957-11.487 24.4a16 16 0 1 1 -31.855 3.059c-2.341-24.336 7.878-44.585 28.035-55.562 22.625-12.32 53.672-9.69 73.824 6.254 19.268 15.245 26.062 39.571 18.642 66.74-5.008 18.338-22.15 31.714-42 47.205-10.716 8.362-22.274 17.381-31.965 27.5h66.279a16 16 0 0 1 0 32h-97.345a16 16 0 0 1 -14.4-22.985c13.025-26.844 36.781-45.382 57.74-61.738 14.071-10.981 28.615-22.331 30.825-30.412zm421.5 185.29a256 256 0 0 1 -437.02 181.02 254.327 254.327 0 0 1 -74.98-181.02 16 16 0 0 1 32 0c0 123.514 100.486 224 224 224s224-100.486 224-224c0-112.136-83.714-207.617-194.726-222.1a16 16 0 1 1 4.14-31.728 256.04 256.04 0 0 1 222.586 253.828z">
+                  </path>
+                </svg>
+              </div>
+              <div class="competitive-prices-content">
+                <h3>24/7 Free Customer Support</h3>
+                <p>Faucibus gravida aliquam nulla lectus lacinia eget</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rental-service-column-two">
+          <div class="rental-service-column-two-img">
+            <img src="images/car-14.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting For Booking -->
+  <section class="for-booking">
+    <div class="for-booking-banner">
+      <div class="container">
+        <div class="for-booking-banner-inner">
+          <div class="for-booking-para">
+            <p>Call Today For Booking Your Next Ride</p>
+          </div>
+          <div class="for-booking-svg">
+            <svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z">
+              </path>
+            </svg>
+            <h4>(800) 650 743</h4>
+          </div>
+          <div class="for-booking-para">
+            <p>Operators available 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting gallery  -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-section-banner">
+        <div class="gallery-section-content">
+          <h2>the fleets gallery</h2>
+          <h5>Luxury Rental Services</h5>
+          <div class="gallery-section-para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed don eiusmod tempor enim minim veniam quis
+              notrud exercitation </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-inner">
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-3.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-3.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-8.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-8.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-7.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-7.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-6.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-6.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-5.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-5.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-4.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-4.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-2.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-2.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+      <div class="column-box">
+        <div class="box">
+          <a href="images/car-1.jpg" data-fancybox="gallery" tabindex="0">
+            <img src="images/car-1.jpg" alt="car">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting customer reviews -->
+  <section class="customer-reviews">
+    <div class="container">
+      <div class="latest-news-inner">
+        <div class="gallery-section-content">
+          <h2>customer reviews</h2>
+          <h5>Luxury Rental Services</h5>
+        </div>
+      </div>
+      <div class="customer-reviews-slider">
+        <div class="customer-reviews-slider-inner">
+          <div class="customer-reviews-row">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="customer-reviews-slider-img">
+                  <img src="images/review04.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="customer-reviews-slider-content">
+                  <p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor etor dolore magna aliqua. Ut
+                    enim ad minim veniam qu nostrud exercitat nisi ut aliquip ex ea commodo consequat duis autes irure.
+                  </p>
+                  <div class="customer-reviews-icon">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="customer-reviews-slider-para">
+                  <h4>Pedra </h4>
+                  <p>Analyst</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-reviews-slider-inner">
+          <div class="customer-reviews-row">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="customer-reviews-slider-img">
+                  <img src="images/review02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="customer-reviews-slider-content">
+                  <p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor etor dolore magna aliqua. Ut
+                    enim ad minim veniam qu nostrud exercitat nisi ut aliquip ex ea commodo consequat duis autes irure.
+                  </p>
+                  <div class="customer-reviews-icon">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="customer-reviews-slider-para">
+                  <h4>jon dou</h4>
+                  <p>police</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-reviews-slider-inner">
+          <div class="customer-reviews-row">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="customer-reviews-slider-img">
+                  <img src="images/review03.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="customer-reviews-slider-content">
+                  <p>Lorem ipsum dolor sit amet consecteur adipiscing elit sed eiusmod tempor etor dolore magna aliqua. Ut
+                    enim ad minim veniam qu nostrud exercitat nisi ut aliquip ex ea commodo consequat duis autes irure.
+                  </p>
+                  <div class="customer-reviews-icon">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="customer-reviews-slider-para">
+                  <h4>Sebastian</h4>
+                  <p>seo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting Latest News -->
+  <section class="latest-news">
+    <div class="container">
+      <div class="latest-news-inner">
+        <div class="gallery-section-content">
+          <h2>Latest News</h2>
+          <h5>Luxury Rental Services</h5>
+        </div>
+      </div>
+      <div class="latest-news-slider">
+        <div class="latest-news-slide">
+          <div class="slider-box">
+            <div class="slider-box-inner">
+              <div class="slider-inner">
+                <div class="slider-img">
+                  <a href="#">
+                    <img src="images/pic-2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="latest-news-slide-content">
+                  <div class="slider-ten-ul">
+                    <ul>
+                      <li><i class="fa fa-calendar-o" aria-hidden="true"></i>June 29, 2016 </li>
+                      <li>0</li>
+                    </ul>
+                  </div>
+                  <div class="toyota-car">
+                    <a href="#url">
+                      <h4>Toyota Car decline overshadows light-truck gain</h4>
+                    </a>
+                  </div>
+                  <div class="slider-content">
+                    <p>
+
+                      Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia
+                      eget lorem acdua eros pharetral interdum quisque convallis nula dpsum val
+                      mualiq amet consectetur adipisicing sed eiusmod tem pory. Utenim ad minim
+                      ven quis nostrud exercitation ulamco laboris nisi ut aliquip exldolor in
+                      reprehenderit voluptate velit non proident sunt in culpa.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-box">
+            <div class="slider-box-inner">
+              <div class="slider-inner">
+                <div class="slider-img">
+                  <a href="#">
+                    <img src="images/pic-3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="latest-news-slide-content">
+                  <div class="slider-ten-ul">
+                    <ul>
+                      <li><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        October 19, 2016 </li>
+                      <li>1</li>
+                    </ul>
+                  </div>
+                  <div class="toyota-car">
+                    <a href="#url">
+                      <h4>Dealer agency warns carmakers on ‘safest’ label after Tesla boast</h4>
+                    </a>
+                  </div>
+                  <div class="slider-content">
+                    <p>
+
+                      Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia
+                      eget lorem acdua eros pharetral interdum quisque convallis nula dpsum val
+                      mualiq amet consectetur adipisicing sed eiusmod tem pory. Utenim ad minim
+                      ven quis nostrud exercitation ulamco laboris nisi ut aliquip exldolor in
+                      reprehenderit voluptate velit non proident sunt in culpa.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-box">
+            <div class="slider-box-inner">
+              <div class="slider-inner">
+                <div class="slider-img">
+                  <a href="#"><img src="images/pic-4.jpg" alt=""></a>
+                </div>
+                <div class="latest-news-slide-content">
+                  <div class="slider-ten-ul">
+                    <ul>
+                      <li><i class="fa fa-calendar-o" aria-hidden="true"></i>June 29, 2016 </li>
+                      <li>0</li>
+                    </ul>
+                  </div>
+                  <div class="toyota-car">
+                    <a href="#url">
+                      <h4>Porsche sees opportunity to broaden subscriptions</h4>
+                    </a>
+                  </div>
+                  <div class="slider-content">
+                    <p>
+
+                      Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia
+                      eget lorem acdua eros pharetral interdum quisque convallis nula dpsum val
+                      mualiq amet consectetur adipisicing sed eiusmod tem pory. Utenim ad minim
+                      ven quis nostrud exercitation ulamco laboris nisi ut aliquip exldolor in
+                      reprehenderit voluptate velit non proident sunt in culpa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-box">
+            <div class="slider-box-inner">
+              <div class="slider-inner">
+                <div class="slider-img">
+                  <a href="#">
+                    <img src="images/pic-1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="latest-news-slide-content">
+                  <div class="slider-ten-ul">
+                    <ul>
+                      <li><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                        October 19, 2016 </li>
+                      <li>0</li>
+                    </ul>
+                  </div>
+                  <div class="toyota-car">
+                    <a href="#url">
+                      <h4>GM finds its balance with sales of pickups</h4>
+                    </a>
+                  </div>
+                  <div class="slider-content">
+                    <p>
+
+                      Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia
+                      eget lorem acdua eros pharetral interdum quisque convallis nula dpsum val
+                      mualiq amet consectetur adipisicing sed eiusmod tem pory. Utenim ad minim
+                      ven quis nostrud exercitation ulamco laboris nisi ut aliquip exldolor in
+                      reprehenderit voluptate velit non proident sunt in culpa.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting download our app -->
+  <section class="download-app">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="download-app-img">
+            <img src="images/asapp.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="download-app-heading">
+            <h2>Faster, easier access to car rental services</h2>
+          </div>
+          <div class="download-app-heading">
+            <h2>download our app</h2>
+          </div>
+          <div class="download-app-para">
+            <p>
+              Integer tortor bibendum est faucibus gravida aliquam nulla lectus lacinia eget lorem acdua eros pharetral
+              interdum quisque convallis nula dpsum val mualiq amet consectetur adipisicing sed eiusmod tem pory.
+            </p>
+          </div>
+          <div class="download-sec">
+            <div class="google-play">
+              <img src="images/google-play.png" alt="google-play">
+            </div>
+            <div class="apple-store">
+              <img src="images/apple-store.png" alt="apple-store">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- starting footer -->
+  <footer class="footet-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <a href="#">
+            <div class="footer-img">
+              <img src="images/autostar-logo.png" alt="">
+              <p>Copyright © 2024 Pixity Theme.<br>
+                All Rights Reserved.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6">
+          <div class="footer-content">
+            <p>USEFUL LINKS</p>
+            <ul>
+              <li><a href="#">Refunds policy</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-6">
+          <div class="footer-content">
+            <p>OUR TERMS</p>
+            <ul>
+              <li><a href="#">Refunds policy</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-12">
+          <div class="footer-content">
+            <p>SHOWROOM</p>
+            <div class="footer-img footer-para">
+              <p>USA, Auto, King St. 665087<br>
+                Phone.: +7 234 949-58-83<br>
+                E-mail.: info@example.com<br>
+                © 2024 Auto LTD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

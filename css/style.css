@@ -1,0 +1,2007 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-size: 98px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 100px;
+    margin: 0;
+}
+
+h2 {
+    color: #141414;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h4 {
+    color: #FFFFFF;
+    font-size: 41px;
+    font-weight: 800;
+    padding-left: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    color: #999999;
+    font-family: "Playfair Display", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+label {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+.loader-body {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-inner {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-box {
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid #da1c36;
+    border-bottom: 10px solid #da1c36;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-radius: 50%;
+    animation: rotate-animation 1s infinite linear;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.page-header {
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid #333;
+    z-index: 99999;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-nav .nav-item i {
+    transition: all .4s ease-in-out;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    padding: 0 12px;
+}
+
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:hover {
+    color: #dc2d13;
+}
+
+.navbar-nav .nav-item:hover i {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid #DA1C36;
+}
+
+.inner-nav-bar {
+    position: absolute;
+    width: 158px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    top: 68px;
+    left: 0;
+    padding: 19px 20px;
+    transform: translateY(100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar-nav .nav-item:hover .inner-nav-bar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(16%);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 30px 0;
+}
+
+.inner-nav-bar-inner a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.42857143;
+    padding: 7px 0;
+    transition: all .4s ease-in-out;
+}
+
+.inner-nav-bar-inner a:hover {
+    color: #DA1C36;
+}
+
+
+
+/* starting easy-book-car */
+.easy-book-car-banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide01.jpg);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 260px 0;
+}
+
+.easy-book-car-para p {
+    font-size: 27px;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 20px;
+    margin-top: 18px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.form-inner {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    padding: 35px;
+    border-radius: 0px;
+    box-shadow: 3px 4px 30px rgb(0 0 0 / .08);
+    background-color: #fff;
+    border-bottom: 5px solid #DA1C36;
+}
+
+.form-block,
+.location {
+    padding: 10px 0;
+}
+
+.form-block label,
+.location label {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+
+.select-box select {
+    width: 100%;
+    height: 47px;
+    background-image: url(../images/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 17rem;
+    background-size: 10px 12px;
+    padding: 12px 17px 12px 7px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    color: #999;
+    outline: 0;
+    appearance: none;
+}
+
+.select-two select {
+    width: 50px;
+    height: 37px;
+    font-size: 11px;
+    background-position: 32px;
+}
+
+.time-row {
+    display: flex;
+    align-items: center;
+    margin: 0 -5px;
+}
+
+.time-column {
+    width: 60%;
+    padding: 0 5px;
+}
+
+.time-column-two {
+    width: 40%;
+    padding: 0 5px;
+}
+
+.time-column input {
+    width: 100%;
+    height: 37px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #999;
+    outline: 0;
+    appearance: none;
+    padding: 0 10px;
+}
+
+.time-column-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-span {
+    padding: 0 5px;
+    display: block;
+}
+
+.easy-book-car-btn a {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    border: 1px solid #222;
+    padding: 11px 12px;
+    line-height: 1;
+    margin: 20px 0 10px;
+    transition: all .3s ease-in-out;
+}
+
+.easy-book-car-btn a:hover {
+    color: #DA1C36;
+    border: 1px solid #DA1C36;
+}
+
+/* starting section two */
+
+.our-benefits-block {
+    padding: 100px 0 45px 0;
+}
+
+.our-benefits-svg-one svg {
+    width: 76px;
+    height: 76px;
+}
+
+.our-benefits-svg-two svg {
+    width: 43px;
+    fill: #DA1C36
+}
+
+.our-benefits-box {
+    width: 100%;
+    height: 100%;
+}
+
+.our-benefits-box-inner {
+    text-align: center;
+}
+
+
+
+/* starting section three */
+.rental-work {
+    margin-top: 100px;
+    position: relative;
+}
+
+.rental-work-video video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+}
+
+
+.rental-work-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: hsl(0deg 0% 0% / 72%);
+    padding: 100px 0 140px 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+}
+
+.rental-work-heading h2 {
+    color: #fff;
+}
+
+.rental-work-heading {
+    text-align: center;
+}
+
+.rental-car-svg svg {
+    width: 70px;
+    height: 70px;
+    fill: #fff;
+    margin-right: 20px;
+}
+
+.rental-car-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.rental-car-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.rental-car-content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFEFEF5;
+    line-height: 1.42857143;
+}
+
+.rental-car-box-inner {
+    display: flex;
+}
+
+.svg-arrow svg {
+    width: 27px;
+    height: 27px;
+    fill: #fff;
+}
+
+/* starting section four  */
+
+.fleets-gallery-content {
+    margin-bottom: 100px;
+}
+
+.title-h4 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #222;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.fleets-gallery-box {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 20px 20px 15px 20px;
+}
+
+.fleets-gallery-img ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fleets-gallery-img ul li {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #444;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.fleets-gallery-img ul li img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+/* .fleets-gallery-slider-wrap{
+    margin: 0 -15px;
+} */
+
+.fleets-gallery-slider-wrap {
+    padding: 0 15px;
+}
+
+.fleets-gallery-slider-wrap {
+    height: 100%;
+    cursor: move;
+    transition: all .4s ease-in-out;
+}
+
+.fleets-gallery-slider-wrap:hover .rent-btn a {
+    color: #fff;
+    background-color: #DA1C36;
+    border: 1px solid #DA1C36;
+}
+
+.fleets-gallery-slider-img img {
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+}
+
+.car-features {
+    margin: 20px 0;
+}
+
+.car-features ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-features ul li i {
+    margin: 0 5px;
+}
+
+.car-features ul li {
+    width: 50%;
+    font-size: 11px;
+    font-weight: 500;
+    color: #777777;
+    margin-bottom: 5px;
+    padding: 0 3px;
+}
+
+.rent-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rent-sec span {
+    color: #DA1C36;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rent-btn a {
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all .4s ease-in-out;
+}
+
+/* .fleets-gallery-box  {
+    color: #fff;
+    background-color: #DA1C36;
+    border: 1px solid #DA1C36;
+} */
+
+/* starting section five */
+
+.rental-service,
+.latest-news {
+    background-color: #F7F7F7;
+    padding: 183px 0px 100px 0px;
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.rental-service-column {
+    width: 46%;
+}
+
+.rental-service-column-content h2 {
+    text-transform: none;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+
+.rental-service-column-content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.competitive-prices {
+    padding-top: 50px;
+}
+
+.competitive-prices-content,
+.competitive-prices-svg {
+    margin-bottom: 20px;
+}
+
+.competitive-prices-svg svg {
+    width: 50px;
+    height: 50px;
+    fill: #DA1C36;
+    margin-right: 15px;
+}
+
+.competitive-prices-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.competitive-prices-content h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #000000;
+    margin-bottom: 9px;
+}
+
+.competitive-prices-content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.42857143;
+}
+
+
+.rental-service-column-two {
+    width: 54%;
+}
+
+.rental-service-column-two-img img {
+    width: 640px;
+    height: 733px;
+    object-fit: cover;
+    margin-top: -30px;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+/* starting For Booking */
+
+.for-booking-banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/slide02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 143%;
+    padding: 60px 0;
+}
+
+.for-booking-para p {
+    color: #FFFFFF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-right: 20px;
+}
+
+.for-booking-svg {
+    display: flex;
+    padding-right: 25px;
+}
+
+.for-booking-svg svg {
+    width: 50px;
+    height: 50px;
+    fill: #DA1C36;
+}
+
+.for-booking-banner-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-booking-heading {
+    padding: 0 55px 10px 55px;
+}
+
+.for-booking-heading h2 {
+    color: #000000;
+    font-family: "Raleway", Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31px;
+    text-transform: capitalize;
+}
+
+
+
+/* starting gallery */
+
+.gallery-section-banner {
+    padding: 100px 0 20px 0;
+}
+
+.gallery-section-content {
+    text-align: center;
+}
+
+.gallery-section-content h2,
+.gallery-section-content h5 {
+    margin-bottom: 20px;
+}
+
+.gallery-section-content p {
+    color: #999999;
+    font-family: "Raleway", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.gallery-section-para {
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.gallery-section-content,
+.gallery-section-para {
+    padding: 10px;
+}
+
+.column-inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-box {
+    width: 25%;
+}
+
+.box img {
+    width: 100%;
+}
+
+/* starting customer-reviews */
+.customer-reviews {
+    padding: 100px 0 0 0;
+}
+
+.customer-reviews-slider-inner {
+    padding-top: 50px;
+}
+
+.customer-reviews-slider-img img {
+    width: 346px;
+    height: 346px;
+}
+
+.customer-reviews-slider-content {
+    background: #fff;
+    padding: 62px;
+    box-shadow: 3px 3px 23px 10px #f4f4f4;
+    margin-left: -7%;
+    width: 93%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.customer-reviews-icon {
+    position: absolute;
+    top: -54px;
+    right: 27px;
+    color: #DA1C36;
+    font-size: 60px;
+}
+
+.customer-reviews-slider-content p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.customer-reviews-slider-para {
+    margin-top: 50px;
+}
+
+.customer-reviews-slider-para h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.42857143;
+    color: #222;
+}
+
+.customer-reviews-slider-para p {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/* starting latest-news */
+
+.latest-news-slider {
+    margin-top: 45px;
+}
+
+.latest-news-slide .slick-list {
+    margin: 0 -25px;
+}
+
+.latest-news-slide .slider-box {
+    height: auto;
+    padding: 0 25px;
+}
+
+.slider-img img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.slider-ten-ul ul {
+    display: flex;
+}
+
+.slider-ten-ul li {
+    margin-right: 15px;
+    color: #666666;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.slider-ten-ul li i {
+    color: #DA1C36;
+    margin-right: 5px;
+}
+
+.toyota-car h4 {
+    color: #222;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.toyota-car h4::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #DA1C36;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    padding-bottom: 25px;
+}
+
+.latest-news-slide-content {
+    padding-right: 20px;
+}
+
+.slider-box-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-news-slide .slick-track {
+    display: flex;
+}
+
+.slick-dots {
+    margin: 70px 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.latest-news-slider .slick-dots li,
+.fleets-gallery-slider .slick-dots li,
+.customer-reviews-slider .slick-dots li {
+    padding: 0 10px;
+
+}
+
+.latest-news-slider .slick-dots li button,
+.fleets-gallery-slider .slick-dots li button,
+.customer-reviews-slider .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0;
+    border: 1px solid #999;
+    border-radius: 50%;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+
+.latest-news-slider .slick-dots li.slick-active button,
+.fleets-gallery-slider .slick-dots li.slick-active button,
+.customer-reviews-slider .slick-dots li.slick-active button {
+    border: 1px solid #DA1C36;
+}
+
+.latest-news-slider .slick-dots li.slick-active button::before,
+.fleets-gallery-slider .slick-dots li.slick-active button::before,
+.customer-reviews-slider .slick-dots li.slick-active button::before {
+    background-color: #DA1C36;
+}
+
+.latest-news-slider .slick-dots li button::before,
+.fleets-gallery-slider .slick-dots li button::before,
+.customer-reviews-slider .slick-dots li button::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease-in-out;
+}
+
+.latest-news-slider .slick-dots li button:hover::before,
+.fleets-gallery-slider .slick-dots li button:hover::before,
+.customer-reviews-slider .slick-dots li button:hover::before {
+    background-color: #DA1C36;
+}
+
+.latest-news-slider .slick-dots li button:hover,
+.fleets-gallery-slider .slick-dots li button:hover,
+.customer-reviews-slider .slick-dots li button:hover {
+    border: 1px solid #DA1C36;
+}
+
+/* starting download-app */
+
+.download-app {
+    background-color: #DA1C36;
+    padding: 125px 0;
+}
+
+.download-app-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.download-app-img img {
+    width: 320px;
+    height: 584px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -224px;
+}
+
+.download-app-heading h2,
+.download-app-heading h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.download-app-heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.download-app-para {
+    width: 100%;
+    max-width: 74%;
+}
+
+.download-app-para p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.download-sec {
+    display: flex;
+}
+
+.google-play,
+.apple-store {
+    padding: 10px;
+}
+
+.google-play img {
+    width: 220px;
+    height: 85px;
+    margin-right: 30px;
+}
+
+.apple-store img {
+    width: 226px;
+    height: 85px;
+    margin-left: 30px;
+}
+
+/* search section starting */
+
+.search-banner {
+    background-attachment: fixed;
+    padding: 200px 0 50px;
+    clip-path: none
+}
+
+.title-h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.search-content ul li:first-child {
+    position: relative;
+}
+
+.search-content ul li:first-child::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 19px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+}
+
+.search-content ul {
+    display: flex;
+}
+
+.search-content ul li {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.search-content ul li a {
+    color: #fff;
+    padding-left: 28px;
+    transition: all .4s ease-in-out;
+}
+
+.search-content ul li a:hover {
+    color: #DA1C36;
+    text-decoration: underline;
+}
+
+.search-Pickup {
+    padding-bottom: 50px;
+}
+
+.search-Pickup-inner {
+    margin-top: 80px;
+}
+
+.search-Pickup-inner p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    border: 1px solid #c70000;
+    color: #c70000;
+    margin: 15px 0 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.search-form-block {
+    width: 50%;
+    padding: 10px 8px;
+}
+
+.search-form-block-two {
+    width: 100%;
+}
+
+.search-form-inner {
+    padding: 35px;
+    border: 1px solid #ddd;
+}
+
+.search-column input,
+.select-box-two select {
+    height: 43px;
+    background-position: 4.4rem;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-select-box select {
+    background-position: 32rem;
+}
+
+.search-form-block-two select {
+    background-position: 64rem;
+}
+
+.select-box-one select {
+    background-position: 62.5rem;
+}
+
+.select-box-two {
+    width: 100px;
+}
+
+.search-column {
+    width: 60%;
+}
+
+.search-column-two {
+    width: 40%;
+}
+
+.select-time {
+    padding: 10px;
+}
+
+.select-time a {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 20px 36px 20px 36px;
+}
+
+
+/* starting footer */
+.footet-sec {
+    padding: 80px 0 70px;
+    background-color: #1a1a1a;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: start;
+    margin: 0 -15px;
+}
+
+.footer-column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-img img {
+    width: 130px;
+}
+
+.footer-img p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+    line-height: 1.9;
+    padding-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-content p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-content ul li {
+
+    padding-bottom: 11px;
+}
+
+.footer-content ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.footer-content ul li a:hover {
+    color: #DA1C36;
+    text-decoration: underline;
+}
+
+.footer-para p {
+    padding: 0;
+}
+
+.footer-img p {
+    font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 62px;
+        line-height: 95px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .easy-book-car-row {
+        align-items: center;
+    }
+
+    .easy-book-car-banner {
+        padding: 250px 0 230px;
+    }
+
+    .form-inner {
+        max-width: 348px;
+    }
+
+    .select-box select {
+        background-position: 16rem;
+    }
+
+    .our-benefits-block {
+        padding: 76px 0 45px 0;
+    }
+
+    .for-booking-para p {
+        font-size: 19px;
+    }
+
+    .for-booking-heading h2 {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .fleets-gallery-slider-img img {
+        height: 138px;
+        object-fit: cover;
+    }
+
+    .fleets-gallery-content {
+        margin-bottom: 64px;
+    }
+
+    .customer-reviews-slider-para {
+        margin-top: 40px;
+        padding-left: 48px;
+    }
+
+    .competitive-prices-svg svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .latest-news-slide .slick-list {
+        margin: 0 -15px;
+    }
+
+    .latest-news-slide .slider-box {
+        padding: 0 15px;
+    }
+
+    .rental-service-column-two-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rental-service-column-content h2 {
+        line-height: 43px;
+        margin-bottom: 15px;
+    }
+
+    .competitive-prices {
+        padding-top: 33px;
+    }
+
+    .competitive-prices-svg svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .competitive-prices-block {
+        margin-bottom: 10px;
+    }
+
+    .competitive-prices-content h3 {
+        font-size: 15px;
+    }
+
+    .competitive-prices-content p {
+        font-size: 12px;
+    }
+
+    .for-booking-svg svg {
+        width: 33px;
+        height: 33px;
+    }
+
+    .download-app-heading h2 {
+        font-size: 32px;
+        line-height: 41px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    h1 {
+        font-size: 56px;
+        line-height: 76px;
+        text-align: center;
+    }
+
+    .header-nav {
+        padding: 22px 0;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        border: none;
+    }
+
+    .navbar-icon {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 5px 0px;
+    }
+
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-link.active {
+        color: #000;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    .navbar-collapse {
+        margin-left: auto;
+        text-align: left;
+        background-color: #fff;
+        padding: 60px 10px 10px 10px;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+        position: fixed;
+        z-index: 9999999999;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 238px;
+        height: 100vh;
+        overflow: auto;
+        transition: all .4s ease-in-out;
+        box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
+    }
+
+    .cross-btn {
+        position: absolute;
+        top: 15px;
+        left: 13px;
+    }
+
+    .navbar-nav .nav-link.active {
+        border-bottom: 0;
+        color: #DA1C36;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0 4px;
+    }
+
+    .collapse:not(.show) {
+        transition: all .4s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .nab-bar-icon {
+        color: #000;
+    }
+
+    .easy-book-car-banner {
+        padding: 150px 0 164px;
+        clip-path: polygon(0 0, 100% 0%, 134% 100%, 0 90%);
+    }
+
+    .easy-book-car-para p {
+        font-size: 24px;
+        margin: 20px 0 30px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .form-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-select-box select {
+        background-position: 38rem !important;
+    }
+
+    .select-box select {
+        background-position: 2rem;
+    }
+
+    .select-two select,
+    .time-column input {
+        height: 42px;
+    }
+
+    .easy-book-car-btn a {
+        font-size: 14px;
+        padding: 20px 0 10px;
+    }
+
+    .slick-dots {
+        margin: 50px 0 50px;
+    }
+
+    .time-column {
+        width: 80%;
+    }
+
+    .time-column-two {
+        width: 20%;
+    }
+
+    .our-benefits-block {
+        padding: 24px 0 45px 0;
+    }
+
+    .gallery-section-para {
+        max-width: 60%;
+    }
+
+    .fleets-gallery-content {
+        margin-bottom: 18px;
+    }
+
+    .column-inner {
+        justify-content: center;
+    }
+
+    .column-box {
+        width: 33.333%;
+    }
+
+    .latest-news {
+        padding: 127px 0px 70px 0px;
+        clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .download-app-img {
+        display: none;
+    }
+
+    .footer-img {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-para {
+        margin: 0;
+        text-align: start;
+    }
+
+    .rental-service-column-two {
+        display: none;
+    }
+
+    .rental-car-box-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rental-car-svg svg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .rental-car-content {
+        text-align: center;
+    }
+
+    .rental-service-column {
+        width: 100%;
+    }
+
+    .rental-service,
+    .latest-news {
+        padding: 118px 0px 86px 0px;
+    }
+
+    .gallery-section-banner {
+        padding: 80px 0 20px 0;
+    }
+
+    .for-booking-banner-inner {
+        flex-wrap: wrap;
+    }
+
+    .for-booking-para {
+        margin-bottom: 15px;
+    }
+
+    .customer-reviews-row {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+        padding: 50px;
+    }
+
+    .customer-reviews-slider-img img {
+        display: none;
+    }
+
+    .customer-reviews-slider-content {
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        background: #fff;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .customer-reviews-icon {
+        top: -102px;
+        right: -2px;
+    }
+
+    .customer-reviews-slider-inner {
+        padding: 40px 30px;
+    }
+}
+
+@media(max-width:767px) {
+
+    h1 {
+        font-size: 53px;
+        line-height: 73px;
+    }
+
+    .easy-book-car-para p {
+        font-size: 21px;
+        padding: 0;
+    }
+
+    .time-column{
+        width: 70%;
+    }
+
+    .time-column-two{
+        width: 30%;
+    }
+
+    .gallery-section-para {
+        max-width: 80%;
+    }
+
+    .gallery-section-content h2,
+    .gallery-section-content h5 {
+        margin-bottom: 10px;
+    }
+
+    .column-box {
+        width: 50%;
+    }
+
+    .rental-car-content h3 {
+        font-size: 16px;
+    }
+
+    .rental-car-content p {
+        font-size: 12px;
+    }
+
+    .customer-reviews-slider-para {
+        padding-left: 31px;
+    }
+
+    .customer-reviews-icon {
+        top: -75px;
+        font-size: 46px;
+    }
+
+    .customer-reviews-row {
+        padding: 35px 28px;
+    }
+
+    .rental-service,
+    .latest-news {
+        padding: 118px 0px 62px 0px;
+    }
+
+    .slick-dots {
+        margin: 30px 0;
+    }
+
+    .toyota-car h4::before {
+        width: 57px;
+    }
+
+    .download-app-heading h2 {
+        margin-bottom: 15px;
+    }
+
+    .download-app-heading h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .download-sec {
+        justify-content: center;
+    }
+
+    .download-app-para p {
+        font-size: 15px;
+    }
+
+    .download-app-para {
+        max-width: 90%;
+    }
+
+    .footer-content ul li {
+        padding-bottom: 5px;
+    }
+
+    .footer-content ul li a,
+    .footer-img p {
+        font-size: 12px;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 575px) {
+
+    .rental-service-column h2,
+    .rental-service-column p {
+        text-align: center;
+    }
+
+    .rental-service-column p {
+        padding: 0;
+    }
+
+    .google-play img {
+        margin: 0;
+    }
+}
+
+@media(max-width: 575px) {
+
+    .rental-car-box-inner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .svg-arrow svg {
+        display: none;
+    }
+
+    .rental-car-box {
+        flex-wrap: wrap;
+    }
+
+    .rental-car-svg svg {
+        margin-right: 0;
+    }
+
+    .rental-work-content {
+        padding: 100px 0;
+    }
+
+    .latest-news-slide .slick-list {
+        margin: 0 -12px;
+    }
+
+    .latest-news-slide .slider-box {
+        padding: 0 12px;
+    }
+}
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .easy-book-car-para p {
+        font-size: 17px;
+    }
+
+    .form-inner{
+        padding: 28px 15px;
+    }
+
+    .easy-book-car-banner {
+        padding: 122px 0 80px;
+        clip-path: none;
+    }
+
+
+    .our-benefits-box-inner {
+        margin: 0 0 20px;
+    }
+
+    .our-benefits-block {
+        padding: 24px 0 28px 0;
+    }
+
+    .gallery-section-content,
+    .gallery-section-para {
+        padding: 0;
+    }
+
+    .rental-work-content,
+    .rental-service,
+    .latest-news,
+    .rental-work-video video {
+        clip-path: none;
+    }
+
+    .fleets-gallery-slider-img img {
+        height: 100%;
+    }
+
+    .column-box {
+        width: 100%;
+    }
+
+    .download-app-heading h2,
+    .download-app-para p {
+        text-align: center;
+    }
+
+    .download-app-para {
+        max-width: 100%;
+    }
+
+    .download-sec {
+        flex-wrap: wrap;
+    }
+
+    .gallery-section-para {
+        max-width: 100%;
+    }
+
+    .apple-store img {
+        margin: 0;
+    }
+
+    .footer-content p {
+        margin-bottom: 10px;
+    }
+
+    .footer-content ul li a,
+    .footer-img p {
+        font-size: 10px;
+    }
+
+    .footer-content {
+        margin-bottom: 30px;
+    }
+
+    .rental-work {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .footet-sec {
+        padding: 80px 0 7px;
+    }
+
+    .footer-content ul li a, .footer-img p {
+        font-size: 14px;
+    }
+
+    .download-app {
+        padding: 52px 0 48px 0;
+    }
+
+    .download-app-heading h2 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 420px) {
+    .time-column {
+        width: 60%;
+    }
+
+    .time-column-two {
+        width: 40%;
+    }
+}
+
+@media(max-width: 360px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+
+    .rental-service-column-content h2 {
+        line-height: 36px;
+    }
+
+    .rental-service,
+    .latest-news {
+        padding: 50px 0;
+    }
+
+    .select-two select,
+    .time-column input {
+        padding: 10px;
+    }
+
+    .time-column {
+        width: 60%;
+    }
+
+    .time-column-two {
+        width: 40%;
+    }
+
+    .form-inner{
+        padding: 30px 20px;
+    }
+
+    .easy-book-car-btn a {
+        padding: 15px 0;
+    }
+
+    .rental-work-content {
+        padding: 62px 0;
+    }
+
+    .rental-car-box {
+        padding-top: 20px;
+    }
+
+    .for-booking-para p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .for-booking-svg{
+        padding: 0 0 10px 0;
+    }
+
+    .for-booking-svg svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .customer-reviews-icon {
+        display: none;
+    }
+
+    .customer-reviews-slider-para {
+        padding-left: 23px;
+        margin-top: 26px;
+    }
+
+    .customer-reviews-row {
+        padding: 30px 16px;
+    }
+
+    .footer-img img {
+        margin-bottom: 10px;
+    }
+
+    .footer-img p{
+        padding-top: 6px;
+    }
+
+    .footer-content p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .easy-book-car-banner {
+        padding: 118px 0 40px;
+    }
+
+    .rental-work {
+        margin-top: 10px;
+    }
+
+    .gallery-section-banner {
+        padding: 40px 0 20px 0;
+    }
+
+    .for-booking-banner {
+        padding: 43px 0;
+    }
+
+    .customer-reviews {
+        padding: 43px 0 0 0;
+    }
+
+    .customer-reviews-slider-para {
+        padding-left: 0px;
+    }
+
+    .download-app-heading h2 {
+        font-size: 20px;
+    }
+
+    .download-app {
+        padding: 40px 0;
+    }
+
+    .footet-sec {
+        padding: 40px 0 0px;
+    }
+
+    .footer-content ul li a, .footer-img p {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 320px){
+    .easy-book-car-banner {
+        padding: 126px 0 60px;
+    }
+
+    .form-inner {
+        padding: 19px 12px;
+    }
+
+    .time-column {
+        width: 55%;
+    }
+
+    .time-column-two{
+        width: 45%;
+    }
+
+    .rental-work {
+        margin-top: 30px;
+    }
+
+    .competitive-prices-content p {
+        font-size: 10px;
+    }
+
+    .customer-reviews {
+        padding: 65px 0 21px 0;
+    }
+
+    .customer-reviews-slider-inner {
+        padding: 40px 11px;
+    }
+
+    .download-app-heading h2 {
+        font-size: 22px;
+    }
+
+    .download-app {
+        padding: 57px 0;
+    }
+
+    .footer-content p {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .footet-sec {
+        padding: 52px 0 0;
+    }
+}
